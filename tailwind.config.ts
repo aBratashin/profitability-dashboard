@@ -13,6 +13,9 @@ const config: Config = {
         'background-white': '#f5f5f5',
         'blue': '#2555FF',
         'gray': '#3E3E3E',
+        'progressGreen': '#01BF64',
+        'progressRed': '#FF5757',
+        'progressWhite': '#EAEAEA'
       },
     },
   },
