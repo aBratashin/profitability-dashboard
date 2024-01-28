@@ -1,6 +1,7 @@
 import {Metadata} from 'next';
 import Progress from "@/components/progress/Progress";
 import SortItem from "@/components/sortItem/SortItem";
+import Category from "@/components/category/Category";
 import Header from "@/app/dashboard/components/Header";
 
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ export default function Auth() {
             <Header />
             <Progress color='green' type='grade' initialData={36} finalData={72}/>
             <SortItem color='white'>Все</SortItem>
+            <Category color='purple'>Разработка сайта</Category>
         </main>
     );
 }
