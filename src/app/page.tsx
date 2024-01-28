@@ -16,7 +16,7 @@ export default function Home() {
           <p className='text-xl font-semibold text-center'>Егор Коротаев</p>
         </div>
         <div className='flex flex-col gap-2.5 items-center'>
-          <Link className='bg-blue py-6 px-8 rounded-2xl text-white text-center font-medium' href={'/dashboard'}>
+          <Link className='bg-blue py-5 px-9 rounded-2xl text-white text-center font-medium' href={'/dashboard'}>
             Авторизоваться через ClickUp
           </Link>
           <Image
