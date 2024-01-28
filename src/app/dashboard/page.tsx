@@ -1,7 +1,6 @@
 import {Metadata} from 'next';
 import Progress from "@/components/progress/Progress";
 import SortItem from "@/components/sortItem/SortItem";
-import { Metadata } from 'next';
 import Header from "@/app/dashboard/components/Header";
 
 export const metadata: Metadata = {
@@ -12,7 +11,7 @@ export default function Auth() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <Header />
-            <Progress type='plan' color='white' initialData={36} finalData={72}/>
+            <Progress color='green' type='grade' initialData={36} finalData={72}/>
             <SortItem color='white'>Все</SortItem>
         </main>
     );
