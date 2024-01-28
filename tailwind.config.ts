@@ -15,7 +15,8 @@ const config: Config = {
         'gray': '#3E3E3E',
         'progressGreen': '#01BF64',
         'progressRed': '#FF5757',
-        'progressWhite': '#EAEAEA'
+        'progressWhite': '#EAEAEA',
+        'progressYellow': '#F8AE00',
       },
     },
   },
