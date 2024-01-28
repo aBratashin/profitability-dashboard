@@ -7,13 +7,7 @@ const Header = () => {
             <div className="w-[100%] h-14 justify-between items-center inline-flex">
                 <div className="text-neutral-700 text-5xl font-semibold font-['Suisse Intl']">Рентабельность</div>
                 <div className="justify-start items-start gap-4 flex">
-                    <div
-                        className="w-[400px] h-10 px-4 py-3 bg-white rounded-[32px] justify-start items-center gap-2.5 flex">
-                        <div
-                            className="text-zinc-950 text-opacity-30 text-sm font-['Suisse Int'l'] leading-[18px]">Найти
-                            проект
-                        </div>
-                    </div>
+                    <input className="text-sm font-['Suisse Int'l'] leading-[18px] w-[400px] h-10 px-4 py-3 bg-white rounded-[32px] justify-start items-center gap-2.5 flex text-black" placeholder='Найти проект'/>  
                     <div
                         className="pl-2 pr-3 py-2 rounded-[32px] border-2 border-neutral-200 justify-start items-center gap-2.5 flex">
                         <div
