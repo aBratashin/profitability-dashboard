@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='px-4 pt-5'>
             <div className="w-[100%] h-14 justify-between items-center inline-flex">
-                <div className="text-neutral-700 text-5xl font-medium font-['Suisse Intl']">Рентабельность</div>
+                <div className="text-neutral-700 text-5xl font-semibold font-['Suisse Intl']">Рентабельность</div>
                 <div className="justify-start items-start gap-4 flex">
                     <div
                         className="w-[400px] h-10 px-4 py-3 bg-white rounded-[32px] justify-start items-center gap-2.5 flex">
