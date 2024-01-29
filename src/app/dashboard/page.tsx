@@ -6,6 +6,7 @@ import SortItem from "@/components/sortItem/SortItem";
 import StageProgress from "@/components/stageProgress/StageProgress";
 import Category from "@/components/category/Category";
 import Tooltip from "@/components/tooltip/Tooltip";
+import Line from "@/app/dashboard/components/Line"
 
 export const metadata: Metadata = {
     title: 'Dashboard',
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function Auth() {
     return (
         <main>
+            <Line/>
             <Progress color='green' type='grade' initialData={36} finalData={72}/>
             <SortItem color='white'>Все</SortItem>
             <StageProgress color='green' daysQuantity={7} isExpired={true}/>
