@@ -3,70 +3,57 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <div className='px-4 pt-5'>
-            <div className="w-[100%] h-14 justify-between items-center inline-flex">
-                <div className="text-neutral-700 text-5xl font-medium font-['Suisse Intl']">Рентабельность</div>
-                <div className="justify-start items-start gap-4 flex">
+        <div className="flex items-center justify-between w-full px-6 py-6">
+            <div>
+                <h1 className="text-5xl font-medium">Рентабельность</h1>
+            </div>
+            <div className="flex gap-6">
+                <input className="min-w-[400px] px-5 py-2.5 rounded-full" type="text" placeholder="Найти проект"/>
+                <div className="px-1 py-1 gap-2.5 flex items-center rounded-full w-52 border-2 border-lightgray">
                     <div
-                        className="w-[400px] h-10 px-4 py-3 bg-white rounded-[32px] justify-start items-center gap-2.5 flex">
-                        <div
-                            className="text-zinc-950 text-opacity-30 text-sm font-['Suisse Int'l'] leading-[18px]">Найти
-                            проект
-                        </div>
+                        className="max-w-[50px] opacity-50 text-white px-3 py-1 rounded-full bg-gray flex justify-center items-center">
+                        <p>Все</p>
                     </div>
-                    <div
-                        className="pl-2 pr-3 py-2 rounded-[32px] border-2 border-neutral-200 justify-start items-center gap-2.5 flex">
-                        <div
-                            className="w-[37px] px-1.5 pb-0 bg-zinc-950 bg-opacity-50 rounded-[500px] justify-center items-center gap-2.5 flex">
-                            <div className="text-white text-sm font-['Suisse Int'l'] leading-[24px] mb-0.6">все</div>
-                        </div>
-                        <div className="text-zinc-800 text-sm font-['Suisse Int'l'] leading-[18px] mt-0.5">Менеджеры</div>
-                        <div className="w-6 h-6 relative"/>
-                        <Image
-                            src="/img/arrow-down.svg"
-                            width={24}
-                            height={24}
-                            alt="User"
-                            className="rounded-full"
-                        />
-                    </div>
-                    <div className="px-3 py-2 rounded-[32px] border-2 border-neutral-200 justify-start items-center gap-2.5 inline-flex">
-                        <div className="justify-start items-center gap-[3px] flex">
-                        <div className="w-3 h-3 bg-violet-500 rounded-[3px]" />
-                        <div className="w-3 h-3 bg-fuchsia-400 rounded-[3px]" />
-                        </div>
-                        <div className="text-zinc-800 text-sm font-['Suisse Int'l'] leading-[18px]">Тип проекта</div>
-                        <div className="w-6 h-6 relative" />
-                        <Image
-                            src="/img/arrow-down.svg"
-                            width={24}
-                            height={24}
-                            alt="User"
-                            className="rounded-full"
-                        />
-                    </div>
-                    
-
-                    <div
-                        className="pl-2 pr-3 py-2 rounded-[32px] border-2 border-neutral-200 justify-start items-center gap-2.5 flex">
-                        <div
-                            className="w-[37px] px-1.5 pb-0 bg-zinc-950 bg-opacity-50 rounded-[500px] justify-center items-center gap-2.5 flex">
-                            <div className="text-white text-sm font-['Suisse Int'l'] leading-[24px]">все</div>
-                        </div>
-                        <div className="text-zinc-800 text-sm font-['Suisse Int'l'] leading-[18px] mt-0.5">Дата оплаты</div>
-                        <div className="w-6 h-6 relative"/>
-                        <Image
-                            src="/img/arrow-down.svg"
-                            width={24}
-                            height={24}
-                            alt="User"
-                            className="rounded-full"
-                        />
-                    </div>
-                    <div className="w-[90px] px-3 py-2 bg-white rounded-[32px] justify-start items-center gap-2.5 flex">
-                        <div className="text-zinc-800 text-sm font-['Suisse Int'l'] leading-[24px]">Очистить</div>
-                    </div>
+                    <p>Менеджеры</p>
+                    <Image
+                        src="/img/arrow-down.svg"
+                        width={24}
+                        height={24}
+                        alt="User"
+                        className="mr-4 rounded-full"
+                    />
                 </div>
+                <div className="px-1 py-1 gap-2.5 flex items-center rounded-full w-54 border-2 border-lightgray">
+                    <div
+                        className="max-w-[50px] opacity-50 text-white px-3 py-1 rounded-full bg-gray flex justify-center items-center">
+                        <p>Все</p>
+                    </div>
+                    <p>Тип проекта</p>
+                    <Image
+                        src="/img/arrow-down.svg"
+                        width={24}
+                        height={24}
+                        alt="User"
+                        className="mr-4 rounded-full"
+                    />
+                </div>
+                <div className="px-1 py-1 gap-2.5 flex items-center rounded-full w-54 border-2 border-lightgray">
+                    <div
+                        className="max-w-[50px] opacity-50 text-white px-3 py-1 rounded-full bg-gray flex justify-center items-center">
+                        <p>Все</p>
+                    </div>
+                    <p>Дата оплаты</p>
+                    <Image
+                        src="/img/arrow-down.svg"
+                        width={24}
+                        height={24}
+                        alt="User"
+                        className="mr-4 rounded-full"
+                    />
+                </div>
+                <button className="bg-white rounded-full w-24 py-2">
+                    Очистить
+                </button>
             </div>
         </div>
     );

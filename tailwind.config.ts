@@ -18,7 +18,8 @@ const config: Config = {
         'progressWhite': '#EAEAEA',
         'purple': '#7B5BF0',
         'lightgreen': '#17B2A9',
-        'pink': '#E282EA'
+        'pink': '#E282EA',
+        'lightgray': '#E4E4E4'
       },
     },
   },
