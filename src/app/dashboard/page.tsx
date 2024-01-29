@@ -1,6 +1,7 @@
 import {Metadata} from 'next';
 import Progress from "@/components/progress/Progress";
 import SortItem from "@/components/sortItem/SortItem";
+import Category from "@/components/category/Category";
 import Header from "@/app/dashboard/components/Header";
 import StageProgress from "@/components/stageProgress/StageProgress";
 
@@ -15,6 +16,7 @@ export default function Auth() {
             <Progress color='green' type='grade' initialData={36} finalData={72}/>
             <SortItem color='white'>Все</SortItem>
             <StageProgress color='green' daysQuantity={7} isExpired={true}/>
+            <Category color='purple'>Разработка сайта</Category>
         </main>
     );
 }

@@ -17,6 +17,9 @@ const config: Config = {
         'oxemRed': '#FF5757',
         'oxemWhite': '#EAEAEA',
         'oxemYellow': '#F8AE00',
+        'purple': '#7B5BF0',
+        'lightgreen': '#17B2A9',
+        'pink': '#E282EA'
       },
     },
   },
