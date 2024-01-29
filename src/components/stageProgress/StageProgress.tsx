@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, {FC} from 'react';
 import classNames from "classnames";
 import {StageProgressProps} from "./StageProgress.props";
 import Image from "next/image";
@@ -16,25 +16,38 @@ const getDaysEnding = (number: number): string => {
     }
 };
 
-const StageProgress: FC<StageProgressProps> = ({ color, daysQuantity, isExpired }) => {
+const getImg = (color: StageProgressProps['color'], days: number): string => {
+    if (color === 'green') {
+        if (days > 31) {
+            return "./img/full-green.svg"
+        }
+        return "./img/half-green.svg"
+    } else if (color === 'yellow') {
+        return "./img/half-yellow.svg"
+    } else if (color === 'red') {
+        if (days > 31) {
+            return "./img/full-red.svg"
+        }
+        return "./img/half-red.svg"
+    }
+}
+
+const StageProgress: FC<StageProgressProps> = ({color, daysQuantity, isExpired}) => {
     const daysEnding = getDaysEnding(daysQuantity);
+    const imgSrc = getImg(color, daysQuantity)
 
     return (
         <div className='flex items-center'>
             <div className='stroke-amber-400'>
                 <Image
-                    src="/img/stage-progress.svg"
+                    src='./img/full-green.svg'
                     width={18}
                     height={18}
                     alt="stage-progress"
-                    className={classNames(['mr-2'], {
-                        ['stroke-progressGreen']: color === 'green',
-                        ['stroke-progressYellow']: color === 'yellow',
-                        ['stroke-progressRed']: color === 'red'
-                    })}
+                    className='mr-2'
                 />
             </div>
-            <span className={classNames(['text-sm font-medium'],{
+            <span className={classNames(['text-sm font-medium'], {
                 ['text-progressGreen']: color === 'green',
                 ['text-progressYellow']: color === 'yellow',
                 ['text-progressRed']: color === 'red'
