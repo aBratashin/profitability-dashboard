@@ -5,9 +5,9 @@ import classNames from "classnames";
 const Progress: FC<ProgressProps> = ({type, color, initialData, finalData}) => {
     return (
         <div className={classNames(['w-[162px] h-[65px] rounded-2xl'], {
-            ['bg-progressWhite']: color === 'white',
-            ['bg-progressGreen']: color === 'green',
-            ['bg-progressRed']: color === 'red',
+            ['bg-oxemWhite']: color === 'white',
+            ['bg-oxemGreen']: color === 'green',
+            ['bg-oxemRed']: color === 'red',
         })}>
             <div className={classNames(['text-white flex justify-between px-2 py-1'], {
                 ['text-gray']: color === 'white'

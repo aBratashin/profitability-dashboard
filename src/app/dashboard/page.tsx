@@ -14,7 +14,7 @@ export default function Auth() {
             <Header/>
             <Progress color='green' type='grade' initialData={36} finalData={72}/>
             <SortItem color='white'>Все</SortItem>
-            <StageProgress color='green' daysQuantity={43} isExpired={true}/>
+            <StageProgress color='green' daysQuantity={7} isExpired={true}/>
         </main>
     );
 }

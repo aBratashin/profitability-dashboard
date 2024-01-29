@@ -16,7 +16,7 @@ const getDaysEnding = (number: number): string => {
     }
 };
 
-const getImg = (color: StageProgressProps['color'], days: number): string => {
+const getImg = (color: StageProgressProps['color'], days: number, expired: StageProgressProps['isExpired']): string => {
     if (color === 'green') {
         if (days > 31) {
             return "./img/full-green.svg"
@@ -25,32 +25,31 @@ const getImg = (color: StageProgressProps['color'], days: number): string => {
     } else if (color === 'yellow') {
         return "./img/half-yellow.svg"
     } else if (color === 'red') {
-        if (days > 31) {
+        if (expired) {
             return "./img/full-red.svg"
         }
         return "./img/half-red.svg"
     }
+    return "./img/full-green.svg"
 }
 
 const StageProgress: FC<StageProgressProps> = ({color, daysQuantity, isExpired}) => {
     const daysEnding = getDaysEnding(daysQuantity);
-    const imgSrc = getImg(color, daysQuantity)
+    const imgSrc = getImg(color, daysQuantity, isExpired)
 
     return (
         <div className='flex items-center'>
-            <div className='stroke-amber-400'>
-                <Image
-                    src='./img/full-green.svg'
-                    width={18}
-                    height={18}
-                    alt="stage-progress"
-                    className='mr-2'
-                />
-            </div>
+            <Image
+                src={imgSrc}
+                width={18}
+                height={18}
+                alt="stage-progress"
+                className='mr-2'
+            />
             <span className={classNames(['text-sm font-medium'], {
-                ['text-progressGreen']: color === 'green',
-                ['text-progressYellow']: color === 'yellow',
-                ['text-progressRed']: color === 'red'
+                ['text-oxemGreen']: color === 'green',
+                ['text-oxemYellow']: color === 'yellow',
+                ['text-oxemRed']: color === 'red'
             })}>
                 {daysQuantity} {daysEnding}
                 {isExpired && ' назад'}
