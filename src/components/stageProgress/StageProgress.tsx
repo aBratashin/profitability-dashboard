@@ -47,9 +47,9 @@ const StageProgress: FC<StageProgressProps> = ({color, daysQuantity, isExpired})
                 className='mr-2'
             />
             <span className={classNames(['text-sm font-medium'], {
-                ['text-oxemGreen']: color === 'green',
-                ['text-oxemYellow']: color === 'yellow',
-                ['text-oxemRed']: color === 'red'
+                ['text-green']: color === 'green',
+                ['text-yellow']: color === 'yellow',
+                ['text-red']: color === 'red'
             })}>
                 {daysQuantity} {daysEnding}
                 {isExpired && ' назад'}
