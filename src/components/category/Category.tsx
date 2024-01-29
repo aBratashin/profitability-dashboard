@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 const Category: FC<CategoryProps> = ({ color, children }) => {
     return (
-            <button className={classNames(['px-3 py-1 rounded-2xl border-2'], {
+            <button className={classNames(['px-3 py-1 rounded-2xl border-2 font-medium'], {
                 ['border-purple text-purple']: color === 'purple',
                 ['border-lightgreen text-lightgreen']: color === 'lightgreen',
                 ['border-progressRed text-progressRed']: color === 'progressRed',

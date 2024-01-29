@@ -1,12 +1,34 @@
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.tsx","import":"","arguments":[{"src":"../../src/fonts/SuisseIntl-Regular.woff2"}],"variableName":"SuisseIntl"} ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.tsx","import":"","arguments":[{"src":[{"path":"../../src/fonts/SuisseIntl-Regular.otf","weight":"400"},{"path":"../../src/fonts/SuisseIntl-Medium.otf","weight":"500"},{"path":"../../src/fonts/SuisseIntl-SemiBold.otf","weight":"600"},{"path":"../../src/fonts/SuisseIntl-Bold.otf","weight":"700"}]}],"variableName":"SuisseIntl"} ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
-font-family: '__SuisseIntl_b601ac';
-src: url(/_next/static/media/ce65e0a490956205-s.p.woff2) format('woff2');
+font-family: '__SuisseIntl_1a669d';
+src: url(/_next/static/media/e36691a40a84af7b-s.p.otf) format('opentype');
 font-display: swap;
-}@font-face {font-family: '__SuisseIntl_Fallback_b601ac';src: local("Arial");ascent-override: 95.68%;descent-override: 30.18%;line-gap-override: 0.00%;size-adjust: 103.05%
-}.__className_b601ac {font-family: '__SuisseIntl_b601ac', '__SuisseIntl_Fallback_b601ac'
+font-weight: 400;
+}
+
+@font-face {
+font-family: '__SuisseIntl_1a669d';
+src: url(/_next/static/media/697ace9e2b6be03d-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 500;
+}
+
+@font-face {
+font-family: '__SuisseIntl_1a669d';
+src: url(/_next/static/media/18152d5a5b7acb7e-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 600;
+}
+
+@font-face {
+font-family: '__SuisseIntl_1a669d';
+src: url(/_next/static/media/16a36e9b3e44fc25-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 700;
+}@font-face {font-family: '__SuisseIntl_Fallback_1a669d';src: local("Arial");ascent-override: 90.73%;descent-override: 18.92%;line-gap-override: 2.72%;size-adjust: 103.05%
+}.__className_1a669d {font-family: '__SuisseIntl_1a669d', '__SuisseIntl_Fallback_1a669d'
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
@@ -506,14 +528,32 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
+}
+.inset-0 {
+  inset: 0px;
+}
+.mb-0 {
+  margin-bottom: 0px;
+}
+.ml-2 {
+  margin-left: 0.5rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
 }
 .mr-4 {
   margin-right: 1rem;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+.mt-0\.5 {
+  margin-top: 0.125rem;
 }
 .flex {
   display: flex;
@@ -527,6 +567,9 @@ video {
 .h-14 {
   height: 3.5rem;
 }
+.h-3 {
+  height: 0.75rem;
+}
 .h-6 {
   height: 1.5rem;
 }
@@ -535,6 +578,9 @@ video {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.w-3 {
+  width: 0.75rem;
 }
 .w-6 {
   width: 1.5rem;
@@ -553,6 +599,9 @@ video {
 }
 .w-\[90px\] {
   width: 90px;
+}
+.w-full {
+  width: 100%;
 }
 .flex-col {
   flex-direction: column;
@@ -584,6 +633,12 @@ video {
 .gap-8 {
   gap: 2rem;
 }
+.gap-\[3px\] {
+  gap: 3px;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -593,37 +648,73 @@ video {
 .rounded-\[32px\] {
   border-radius: 32px;
 }
+.rounded-\[3px\] {
+  border-radius: 3px;
+}
 .rounded-\[500px\] {
   border-radius: 500px;
 }
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
 .border-2 {
   border-width: 2px;
+}
+.border-t {
+  border-top-width: 1px;
+}
+.border-blue {
+  --tw-border-opacity: 1;
+  border-color: rgb(37 85 255 / var(--tw-border-opacity));
+}
+.border-lightgreen {
+  --tw-border-opacity: 1;
+  border-color: rgb(23 178 169 / var(--tw-border-opacity));
 }
 .border-neutral-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 229 229 / var(--tw-border-opacity));
 }
+.border-pink {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 130 234 / var(--tw-border-opacity));
+}
+.border-purple {
+  --tw-border-opacity: 1;
+  border-color: rgb(123 91 240 / var(--tw-border-opacity));
+}
 .bg-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(37 85 255 / var(--tw-bg-opacity));
 }
-.bg-oxemGreen {
+.bg-fuchsia-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 121 249 / var(--tw-bg-opacity));
+}
+.bg-green {
   --tw-bg-opacity: 1;
   background-color: rgb(1 191 100 / var(--tw-bg-opacity));
 }
-.bg-oxemRed {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 87 87 / var(--tw-bg-opacity));
-}
-.bg-oxemWhite {
+.bg-lightwhite {
   --tw-bg-opacity: 1;
   background-color: rgb(234 234 234 / var(--tw-bg-opacity));
 }
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 87 87 / var(--tw-bg-opacity));
+}
 .bg-transparent {
   background-color: transparent;
+}
+.bg-violet-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 92 246 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -633,11 +724,27 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(62 62 62 / var(--tw-bg-opacity));
+}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
 .p-24 {
   padding: 6rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 0.25rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-2\.5 {
+  padding: 0.625rem;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -682,9 +789,6 @@ video {
 .pb-0 {
   padding-bottom: 0px;
 }
-.pb-0\.5 {
-  padding-bottom: 0.125rem;
-}
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -693,6 +797,9 @@ video {
 }
 .pt-2 {
   padding-top: 0.5rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
 }
 .text-center {
   text-align: center;
@@ -717,6 +824,14 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .font-medium {
   font-weight: 500;
 }
@@ -726,43 +841,68 @@ video {
 .leading-\[18px\] {
   line-height: 18px;
 }
+.leading-\[24px\] {
+  line-height: 24px;
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(37 85 255 / var(--tw-text-opacity));
+}
 .text-gray {
   --tw-text-opacity: 1;
   color: rgb(62 62 62 / var(--tw-text-opacity));
+}
+.text-green {
+  --tw-text-opacity: 1;
+  color: rgb(1 191 100 / var(--tw-text-opacity));
+}
+.text-lightgreen {
+  --tw-text-opacity: 1;
+  color: rgb(23 178 169 / var(--tw-text-opacity));
 }
 .text-neutral-700 {
   --tw-text-opacity: 1;
   color: rgb(64 64 64 / var(--tw-text-opacity));
 }
-.text-oxemGreen {
+.text-pink {
   --tw-text-opacity: 1;
-  color: rgb(1 191 100 / var(--tw-text-opacity));
+  color: rgb(226 130 234 / var(--tw-text-opacity));
 }
-.text-oxemRed {
+.text-purple {
+  --tw-text-opacity: 1;
+  color: rgb(123 91 240 / var(--tw-text-opacity));
+}
+.text-red {
   --tw-text-opacity: 1;
   color: rgb(255 87 87 / var(--tw-text-opacity));
-}
-.text-oxemYellow {
-  --tw-text-opacity: 1;
-  color: rgb(248 174 0 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(248 174 0 / var(--tw-text-opacity));
+}
 .text-zinc-800 {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
 }
-.text-zinc-950 {
-  --tw-text-opacity: 1;
-  color: rgb(9 9 11 / var(--tw-text-opacity));
-}
-.text-opacity-30 {
-  --tw-text-opacity: 0.3;
+.opacity-35 {
+  opacity: 0.35;
 }
 .opacity-70 {
   opacity: 0.7;
+}
+.opacity-100 {
+  opacity: 1;
+}
+.opacity-75 {
+  opacity: 0.75;
 }
 
 :root {
