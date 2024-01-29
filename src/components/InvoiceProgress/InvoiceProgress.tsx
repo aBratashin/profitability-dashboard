@@ -31,7 +31,7 @@ const InvoiceProgress: FC<InvoiceProgressProps> = ({sum, type}) => {
                 alt="stage-progress"
                 className='mr-2'
             />
-            <span className={classNames(['text-gray opacity-35'], {
+            <span className={classNames(['text-gray opacity-35 text-sm font-medium'], {
                 ['text-green opacity-100']: type === 'Закрыт' || type === 'Транзитный'
             })}>
                 {new Intl.NumberFormat('ru-RU', {

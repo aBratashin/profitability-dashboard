@@ -17,7 +17,7 @@ const Progress: FC<ProgressProps> = ({type, color, initialData, finalData}) => {
                     <span className='text-sm opacity-70'>{type === 'plan' ? ' факт' : ' всего'}</span>
                 </div>
                 <div className='flex flex-col pt-2'>
-                    <span className='text-base'>{finalData}{type === 'plan' ? '%' : ' ч'}</span>
+                    <span className='text-base font-medium'>{finalData}{type === 'plan' ? '%' : ' ч'}</span>
                     <span className='text-sm opacity-70'>{type === 'plan' ? ' план' : ' оценка'}</span>
                 </div>
             </div>

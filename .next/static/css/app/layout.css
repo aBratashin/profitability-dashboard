@@ -1,3 +1,36 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.tsx","import":"","arguments":[{"src":[{"path":"../../src/fonts/SuisseIntl-Regular.otf","weight":"400"},{"path":"../../src/fonts/SuisseIntl-Medium.otf","weight":"500"},{"path":"../../src/fonts/SuisseIntl-SemiBold.otf","weight":"600"},{"path":"../../src/fonts/SuisseIntl-Bold.otf","weight":"700"}]}],"variableName":"SuisseIntl"} ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: '__SuisseIntl_1a669d';
+src: url(/_next/static/media/e36691a40a84af7b-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 400;
+}
+
+@font-face {
+font-family: '__SuisseIntl_1a669d';
+src: url(/_next/static/media/697ace9e2b6be03d-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 500;
+}
+
+@font-face {
+font-family: '__SuisseIntl_1a669d';
+src: url(/_next/static/media/18152d5a5b7acb7e-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 600;
+}
+
+@font-face {
+font-family: '__SuisseIntl_1a669d';
+src: url(/_next/static/media/16a36e9b3e44fc25-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 700;
+}@font-face {font-family: '__SuisseIntl_Fallback_1a669d';src: local("Arial");ascent-override: 90.73%;descent-override: 18.92%;line-gap-override: 2.72%;size-adjust: 103.05%
+}.__className_1a669d {font-family: '__SuisseIntl_1a669d', '__SuisseIntl_Fallback_1a669d'
+}
+
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -495,8 +528,14 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
+}
+.inset-0 {
+  inset: 0px;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -561,6 +600,9 @@ video {
 .w-\[90px\] {
   width: 90px;
 }
+.w-full {
+  width: 100%;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -594,6 +636,9 @@ video {
 .gap-\[3px\] {
   gap: 3px;
 }
+.gap-1 {
+  gap: 0.25rem;
+}
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -612,8 +657,17 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
 .border-2 {
   border-width: 2px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-blue {
   --tw-border-opacity: 1;
@@ -670,11 +724,27 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(62 62 62 / var(--tw-bg-opacity));
+}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
 .p-24 {
   padding: 6rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 0.25rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-2\.5 {
+  padding: 0.625rem;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -754,6 +824,14 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .font-medium {
   font-weight: 500;
 }
@@ -823,6 +901,9 @@ video {
 .opacity-100 {
   opacity: 1;
 }
+.opacity-75 {
+  opacity: 0.75;
+}
 
 :root {
     --background-white: #F5F5F5;
@@ -834,38 +915,5 @@ video {
 body {
     background: var(--background-white);
     color: var(--gray);
-}
-
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.tsx","import":"","arguments":[{"src":[{"path":"../../src/fonts/SuisseIntl-Regular.otf","weight":"400"},{"path":"../../src/fonts/SuisseIntl-Medium.otf","weight":"500"},{"path":"../../src/fonts/SuisseIntl-SemiBold.otf","weight":"600"},{"path":"../../src/fonts/SuisseIntl-Bold.otf","weight":"700"}]}],"variableName":"SuisseIntl"} ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-font-family: '__SuisseIntl_1a669d';
-src: url(/_next/static/media/e36691a40a84af7b-s.p.otf) format('opentype');
-font-display: swap;
-font-weight: 400;
-}
-
-@font-face {
-font-family: '__SuisseIntl_1a669d';
-src: url(/_next/static/media/697ace9e2b6be03d-s.p.otf) format('opentype');
-font-display: swap;
-font-weight: 500;
-}
-
-@font-face {
-font-family: '__SuisseIntl_1a669d';
-src: url(/_next/static/media/18152d5a5b7acb7e-s.p.otf) format('opentype');
-font-display: swap;
-font-weight: 600;
-}
-
-@font-face {
-font-family: '__SuisseIntl_1a669d';
-src: url(/_next/static/media/16a36e9b3e44fc25-s.p.otf) format('opentype');
-font-display: swap;
-font-weight: 700;
-}@font-face {font-family: '__SuisseIntl_Fallback_1a669d';src: local("Arial");ascent-override: 90.73%;descent-override: 18.92%;line-gap-override: 2.72%;size-adjust: 103.05%
-}.__className_1a669d {font-family: '__SuisseIntl_1a669d', '__SuisseIntl_Fallback_1a669d'
 }
 
