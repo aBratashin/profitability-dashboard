@@ -1,12 +1,13 @@
 import {Metadata} from 'next';
-import StageInvoiceAlert from "@/components/stageInvoiceAlert/StageInvoiceAlert";
-import InvoiceProgress from "@/components/InvoiceProgress/InvoiceProgress";
+import Header from "@/app/dashboard/components/Header";
+import Line from "@/app/dashboard/components/Line";
 import Progress from "@/components/progress/Progress";
 import SortItem from "@/components/sortItem/SortItem";
 import StageProgress from "@/components/stageProgress/StageProgress";
 import Category from "@/components/category/Category";
+import InvoiceProgress from "@/components/InvoiceProgress/InvoiceProgress";
+import StageInvoiceAlert from "@/components/stageInvoiceAlert/StageInvoiceAlert";
 import Tooltip from "@/components/tooltip/Tooltip";
-import Line from "@/app/dashboard/components/Line"
 
 export const metadata: Metadata = {
     title: 'Dashboard',
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
 
 export default function Auth() {
     return (
-        <main>
+        <main className='flex flex-col items-center justify-center gap-10 h-screen'>
+            <Header/>
             <Line/>
             <Progress color='green' type='grade' initialData={36} finalData={72}/>
             <SortItem color='white'>Все</SortItem>

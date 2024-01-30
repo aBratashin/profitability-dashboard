@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import Search from "@/components/search/Search";
 
 const Header = () => {
     return (
@@ -7,8 +8,8 @@ const Header = () => {
             <div>
                 <h1 className="text-5xl font-medium">Рентабельность</h1>
             </div>
-            <div className="flex gap-6">
-                <input className="min-w-[400px] px-5 py-2.5 rounded-full" type="text" placeholder="Найти проект"/>
+            <div className="flex gap-6 items-center">
+                <Search placeholder='Найти проект'/>
                 <div className="px-1 py-1 gap-2.5 flex items-center rounded-full w-52 border-2 border-lightgray">
                     <div
                         className="max-w-[50px] opacity-50 text-white px-3 py-1 rounded-full bg-gray flex justify-center items-center">
@@ -19,7 +20,7 @@ const Header = () => {
                         src="/img/arrow-down.svg"
                         width={24}
                         height={24}
-                        alt="User"
+                        alt="arrow-down"
                         className="mr-4 rounded-full"
                     />
                 </div>
@@ -33,7 +34,7 @@ const Header = () => {
                         src="/img/arrow-down.svg"
                         width={24}
                         height={24}
-                        alt="User"
+                        alt="arrow-down"
                         className="mr-4 rounded-full"
                     />
                 </div>
@@ -47,7 +48,7 @@ const Header = () => {
                         src="/img/arrow-down.svg"
                         width={24}
                         height={24}
-                        alt="User"
+                        alt="arrow-down"
                         className="mr-4 rounded-full"
                     />
                 </div>
