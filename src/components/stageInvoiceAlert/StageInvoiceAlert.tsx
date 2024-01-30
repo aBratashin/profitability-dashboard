@@ -10,7 +10,7 @@ const StageInvoiceAlert: FC<StageInvoiceAlertProps> = ({children}) => {
                     src="./img/arrow-left.svg"
                     width={16}
                     height={16}
-                    alt="stage-progress"
+                    alt="arrow-left"
                 />
             </div>
             <div className='text-xs text-gray bg-white rounded-3xl py-1 px-3 flex'>

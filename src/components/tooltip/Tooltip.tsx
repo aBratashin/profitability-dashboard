@@ -12,7 +12,7 @@ const Tooltip: FC<TooltipProps> = ({type}) => {
                 src="./img/tooltip-part.svg"
                 width={28}
                 height={13.5}
-                alt="stage-progress"
+                alt="tooltip-part"
             />
         </div>
     )
