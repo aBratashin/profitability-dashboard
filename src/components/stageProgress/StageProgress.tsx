@@ -33,9 +33,9 @@ const getImg = (color: StageProgressProps['color'], days: number, expired: Stage
     return "./img/full-green.svg"
 }
 
-const StageProgress: FC<StageProgressProps> = ({color, daysQuantity, isExpired}) => {
-    const daysEnding = getDaysEnding(daysQuantity);
-    const imgSrc = getImg(color, daysQuantity, isExpired)
+const StageProgress: FC<StageProgressProps> = ({color, progress, isExpired}) => {
+    const daysEnding = getDaysEnding(progress);
+    const imgSrc = getImg(color, progress, isExpired)
 
     return (
         <div className='flex items-center'>
@@ -51,7 +51,7 @@ const StageProgress: FC<StageProgressProps> = ({color, daysQuantity, isExpired})
                 ['text-yellow']: color === 'yellow',
                 ['text-red']: color === 'red'
             })}>
-                {daysQuantity} {daysEnding}
+                {progress} {daysEnding}
                 {isExpired && ' назад'}
             </span>
         </div>

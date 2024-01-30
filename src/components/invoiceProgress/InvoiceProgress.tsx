@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {InvoiceProgressProps} from "@/components/InvoiceProgress/InvoiceProgress.props";
+import {InvoiceProgressProps} from "@/components/invoiceProgress/InvoiceProgress.props";
 import Image from "next/image";
 import classNames from "classnames";
 
