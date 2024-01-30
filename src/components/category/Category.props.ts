@@ -1,6 +1,5 @@
-import {ButtonHTMLAttributes, DetailedHTMLProps, ReactNode} from "react";
+import {HTMLAttributes, DetailedHTMLProps} from "react";
 
-export interface CategoryProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>{
-    children: ReactNode,
-    color: 'purple' | 'lightgreen' | 'progressRed' | 'blue' | 'pink'
+export interface CategoryProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>{
+    type: 'dev' | 'sup' | 'T&M' | 'hours' | 'seo'
 }

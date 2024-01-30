@@ -21,7 +21,7 @@ export default function Auth() {
             <Progress color='green' type='grade' initialData={36} finalData={72}/>
             <SortItem color='white'>Все</SortItem>
             <StageProgress color='green' daysQuantity={7} isExpired={true}/>
-            <Category color='purple'>Разработка сайта</Category>
+            <Category type='dev' />
             <InvoiceProgress sum={220000} type='Планируется'/>
             <StageInvoiceAlert>Дизайн</StageInvoiceAlert>
             <Tooltip type='Планируется'/>
