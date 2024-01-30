@@ -14,7 +14,7 @@ const getSortDropDownType = (category: SortDropDownProps['category']) => {
 
 const SortDropDown: FC<SortDropDownProps> = ({ category }) => {
 
-        const textType = getSortDropDownType(category)
+    const textType = getSortDropDownType(category)
 
     return (
         <button

@@ -4,5 +4,8 @@ export interface DropdownItemProps extends DetailedHTMLProps<HTMLAttributes<HTML
     children?: ReactNode,
     selected: 'yes' | 'no',
     category: 'manager' | 'project' | 'pay_date',
-    all: 'yes' | 'no'
+    all: 'yes' | 'no',
+    color?: 'purple' | 'lightgreen' | 'pink' | 'blue' | 'red',
+    manager_id?: 1 | 2 | 3
+    circle_progress?: 'half-yellow' | 'half-red' | 'full-red'
 }
