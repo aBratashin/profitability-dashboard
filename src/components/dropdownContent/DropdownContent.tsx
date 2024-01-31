@@ -5,7 +5,7 @@ import DropdownItem from "@/components/dropdownItem/DropdownItem";
 const DropdownContent: FC<DropdownContentProps> = ({type}) => {
     return (
         <div className='bg-white p-6 rounded-[32px] flex flex-col gap-4'>
-            {type === 'Менеджеры' &&
+            {type === 'manager' &&
                 <div className='flex flex-col gap-4'>
                     <DropdownItem selected='no' category='manager' all='yes'></DropdownItem>
                     <DropdownItem selected='yes' category='manager' all='no' manager_id={1}>Елизавета
@@ -16,7 +16,7 @@ const DropdownContent: FC<DropdownContentProps> = ({type}) => {
                         Гривская</DropdownItem>
                 </div>
             }
-            {type === 'Тип проекта' &&
+            {type === 'project' &&
                 <div className='flex flex-col gap-4'>
                     <DropdownItem selected='no' category='project' all='yes'></DropdownItem>
                     <DropdownItem selected='yes' category='project' all='no' color='purple'>Разработка
@@ -28,7 +28,7 @@ const DropdownContent: FC<DropdownContentProps> = ({type}) => {
                     <DropdownItem selected='no' category='project' all='no' color='pink'>SEO</DropdownItem>
                 </div>
             }
-            {type === 'Дата оплаты' &&
+            {type === 'pay_date' &&
                 <div className='flex flex-col gap-4'>
                     <DropdownItem selected='no' category='pay_date' all='yes'></DropdownItem>
                     <DropdownItem selected='yes' category='pay_date' all='no'

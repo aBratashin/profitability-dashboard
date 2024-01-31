@@ -1,3 +1,3 @@
 export interface DropdownContentProps {
-    type: 'Менеджеры' | 'Тип проекта' | 'Дата оплаты'
+    type: 'manager' | 'project' | 'pay_date'
 }

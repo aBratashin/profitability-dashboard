@@ -10,6 +10,7 @@ import StageInvoiceAlert from "@/components/stageInvoiceAlert/StageInvoiceAlert"
 import Tooltip from "@/components/tooltip/Tooltip";
 import DropdownItem from "@/components/dropdownItem/DropdownItem";
 import DropdownContent from "@/components/dropdownContent/DropdownContent";
+import SortDropDown from "@/components/sortDropdown/SortDropDown";
 
 export const metadata: Metadata = {
     title: 'Dashboard',
@@ -27,8 +28,9 @@ export default function Auth() {
             <InvoiceProgress sum={220000} type='Планируется'/>
             <StageInvoiceAlert>Дизайн</StageInvoiceAlert>
             <Tooltip type='Планируется'/>
+            <SortDropDown category={"pay_date"} itemType={'default'} />
             <DropdownItem selected='yes' category='manager' all='no' manager_id={1}>Разработка сайта</DropdownItem>
-            <DropdownContent type='Дата оплаты'/>
+            <DropdownContent type='manager'/>
         </main>
     );
 }
