@@ -1,6 +1,6 @@
-import {ReactNode} from "react";
+import {DetailedHTMLProps, HTMLAttributes, ReactNode} from "react";
 
-export interface StageItemProps {
+export interface StageItemProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>{
     children: ReactNode,
     timeColor: 'white' | 'green' | 'yellow' | 'red',
     profitColor: 'white' | 'green' | 'yellow' | 'red',
