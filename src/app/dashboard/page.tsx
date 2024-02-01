@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function Auth() {
     return (
-        <main className='flex flex-col items-center justify-center gap-10 h-screen'>
+        <main>
             <Header/>
             <Line/>
             <Progress color='green' category='time' initialData={36} finalData={72}/>

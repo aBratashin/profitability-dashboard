@@ -18,10 +18,10 @@ const SortDropDown: FC<SortDropDownProps> = ({category, itemType}) => {
 
     return (
         <button
-            className='focus:bg-white px-1 py-1 gap-2.5 flex items-center rounded-full w-54 border-2 border-lightgray hover:border-gray hover:border-opacity-50'
+            className='focus:bg-white px-1 py-2 gap-2.5 flex items-center rounded-full w-54 border-2 border-lightgray hover:border-gray hover:border-opacity-50'
         >
             {itemType === 'all' && <div
-                className="max-w-[50px] opacity-50 text-white px-3 py-1 rounded-full bg-gray flex justify-center items-center">
+                className="max-w-[50px] opacity-50 text-white px-3 py-1 ml-1 rounded-full bg-gray flex justify-center items-center">
                 <p>Все</p>
             </div>}
 
