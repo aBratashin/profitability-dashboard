@@ -26,13 +26,13 @@ const InvoiceProgress: FC<InvoiceProgressProps> = ({sum, type}) => {
         <div className='flex items-center'>
             <Image
                 src={imgSrc}
-                width={12}
-                height={12}
+                width={16}
+                height={16}
                 alt="stage-progress"
-                className='mr-2'
+                className='mr-1.5'
             />
-            <span className={classNames(['text-gray opacity-35 text-sm font-medium'], {
-                ['text-green opacity-100']: type === 'Закрыт' || type === 'Транзитный'
+            <span className={classNames(['text-gray opacity-35 text-md font-medium'], {
+                ['text-green !opacity-100']: type === 'Закрыт' || type === 'Транзитный'
             })}>
                 {new Intl.NumberFormat('ru-RU', {
                     style: 'currency',

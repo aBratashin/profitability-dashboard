@@ -4,13 +4,13 @@ import classNames from "classnames";
 
 const Progress: FC<ProgressProps> = ({type, color, initialData, finalData}) => {
     return (
-        <div className={classNames(['w-[162px] h-[65px] rounded-2xl'], {
+        <div className={classNames(['w-[170px] h-[70px] rounded-2xl'], {
             ['bg-lightwhite']: color === 'white',
             ['bg-green']: color === 'green',
             ['bg-red']: color === 'red',
         })}>
             <div className={classNames(['text-white flex justify-between px-2 py-1'], {
-                ['text-gray']: color === 'white'
+                ['!text-gray']: color === 'white'
             })}>
                 <div className='flex flex-col'>
                     <span className='text-2xl font-medium'>{initialData}{type === 'plan' ? '%' : ' ч'}</span>
