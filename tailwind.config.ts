@@ -1,10 +1,10 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -20,7 +20,10 @@ const config: Config = {
         'purple': '#7B5BF0',
         'lightgreen': '#17B2A9',
         'pink': '#E282EA',
-        'lightgray': '#E4E4E4'
+        'lightgray': '#E4E4E4',
+      },
+      backgroundImage: {
+        'back': 'url(\'/img/back.svg\')',
       },
     },
   },
