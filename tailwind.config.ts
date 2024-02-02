@@ -23,7 +23,7 @@ const config: Config = {
         'lightgray': '#E4E4E4',
       },
       backgroundImage: {
-        'back': 'url(\'/img/back.svg\')',
+        'back': 'url("/img/back.svg")',
       },
     },
   },

@@ -8,14 +8,6 @@ import CardInfoDown from '@/components/cardInfo/CardInfoDown';
 import StageProgress from '@/components/stageProgress/StageProgress';
 import Header from '@/app/dashboard/components/Header';
 import Line from '@/app/dashboard/components/Line';
-import Progress from '@/components/progress/Progress';
-import SortItem from '@/components/sortItem/SortItem';
-import Category from '@/components/category/Category';
-import StageInvoiceAlert from '@/components/stageInvoiceAlert/StageInvoiceAlert';
-import Tooltip from '@/components/tooltip/Tooltip';
-import SortDropDown from '@/components/sortDropdown/SortDropDown';
-import DropdownItem from '@/components/dropdownItem/DropdownItem';
-import DropdownContent from '@/components/dropdownContent/DropdownContent';
 
 export const metadata: Metadata = {
   title: 'Dashboard',
@@ -23,48 +15,67 @@ export const metadata: Metadata = {
 
 export default function Auth() {
   return (
-    <main className="flex flex-col items-center h-screen gap-y-10">
+    <main className="flex flex-col items-center h-screen gap-y-4">
       <Header />
       <Line />
-      <Progress color="white" category="time" initialData={36} finalData={72} />
-      <SortItem state="default">Все</SortItem>
-      <StageProgress color="green" progress={7} isExpired={true} />
-      <Category type="dev" />
-      <InvoiceProgress sum={220000} type="Закрыт" />
-      <StageInvoiceAlert>Дизайн</StageInvoiceAlert>
-      <Tooltip type="Планируется" />
-      <SortDropDown category={'pay_date'} itemType={'default'} />
-      <DropdownItem selected="yes" category="manager" all="no" manager_id={1}>
-        Разработка сайта
-      </DropdownItem>
-      <DropdownContent type="manager" />
-      <StageItem
-        timeColor="red"
-        profitColor="green"
-        hours={10}
-        percentage={100}
-      >
-        <InvoiceProgress sum={110000} type="Планируется" />
-      </StageItem>
-      <div>
-        <CardInfoUp title="HyperPC" month="Октябрь" year={2023} />
-        <CardInfoDown price={139666} remain={139666}>
-          <StageProgress color="green" isExpired={false} progress={20} />
-        </CardInfoDown>
-      </div>
-      <div className="flex items-center gap-2">
-        <div>
-          <CardInfoUp title="HyperPC" month="Октябрь" year={2023} />
-          <CardInfoDown price={139666} remain={139666}>
+      <div className="flex items-center gap-2 w-full p-4">
+        <div className="flex flex-col gap-2">
+          <CardInfoUp title="Готэк" month="Октябрь" year={2023} type={'seo'} manager_id={1} />
+          <CardInfoDown price={500000} remain={110000} sum={390000} progressData={[
+            { category: 'time', color: 'white', initialData: 24, finalData: 76 },
+            { category: 'profit', color: 'green', initialData: 20, finalData: 10 },
+          ]}>
             <StageProgress color="green" isExpired={false} progress={20} />
           </CardInfoDown>
         </div>
         <CardItemGraph>
           <StageItem
-            timeColor="red"
+            timeColor="green"
             profitColor="green"
             hours={10}
             percentage={100}
+          >
+            <InvoiceProgress sum={110000} type="Планируется" />
+          </StageItem>
+        </CardItemGraph>
+      </div>
+      <div className="flex items-center gap-2 w-full p-4">
+        <div className="flex flex-col gap-2">
+          <CardInfoUp title="HyperPC" month="Октябрь" year={2023} type={'hours'} manager_id={2} />
+          <CardInfoDown price={500000} remain={110000} sum={390000} progressData={[
+            { category: 'time', color: 'white', initialData: 24, finalData: 76 },
+            { category: 'profit', color: 'green', initialData: 20, finalData: 10 },
+          ]}>
+            <StageProgress color="green" isExpired={false} progress={20} />
+          </CardInfoDown>
+        </div>
+        <CardItemGraph>
+          <StageItem
+            timeColor="green"
+            profitColor="green"
+            hours={58}
+            percentage={100}
+          >
+            <InvoiceProgress sum={110000} type="Планируется" />
+          </StageItem>
+        </CardItemGraph>
+      </div>
+      <div className="flex items-center gap-2 w-full p-4">
+        <div className="flex flex-col gap-2">
+          <CardInfoUp title="iBankrot" month="Октябрь" year={2023} type={'dev'} manager_id={3} />
+          <CardInfoDown price={500000} remain={110000} sum={390000} progressData={[
+            { category: 'time', color: 'white', initialData: 24, finalData: 76 },
+            { category: 'profit', color: 'red', initialData: 5, finalData: 10 },
+          ]}>
+            <StageProgress color="red" isExpired={true} progress={1} />
+          </CardInfoDown>
+        </div>
+        <CardItemGraph>
+          <StageItem
+            timeColor="red"
+            profitColor="yellow"
+            hours={108}
+            percentage={80}
           >
             <InvoiceProgress sum={110000} type="Планируется" />
           </StageItem>

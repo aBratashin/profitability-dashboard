@@ -3,7 +3,8 @@ import { CardInfoDownProps } from '@/components/cardInfo/CardInfoDown.props';
 import Progress from '@/components/progress/Progress';
 import InvoiceProgress from '@/components/invoiceProgress/InvoiceProgress';
 
-const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children }) => {
+const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children, sum, progressData }) => {
+  console.log(progressData);
   return (
     <div>
       <div className="px-5 py-3 min-w-[500px] rounded-3xl bg-white font-medium">
@@ -17,7 +18,7 @@ const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children }) => {
                 minimumFractionDigits: 0,
               }).format(price)}
             </p>
-            <InvoiceProgress type="Закрыт" sum={0} />
+            <InvoiceProgress type="Закрыт" sum={sum} />
             <div className="flex gap-1 opacity-50 font-medium">
               <p>Остаток</p>
               <p>
@@ -38,11 +39,10 @@ const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children }) => {
           </div>
 
           <div className="flex flex-col justify-center gap-6">
-            <Progress category="time" color="white" initialData={24} finalData={76} />
-            <Progress category="profit" color="green" initialData={20} finalData={10} />
+            {progressData?.map(el => <Progress category={el.category} color={el.color} initialData={el.initialData}
+                                               finalData={el.finalData} />)}
           </div>
         </div>
-
       </div>
     </div>
   );
