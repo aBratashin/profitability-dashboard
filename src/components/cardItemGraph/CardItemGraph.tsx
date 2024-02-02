@@ -3,7 +3,7 @@ import { CardItemGraphProps } from '@/components/cardItemGraph/CardItemGraph.pro
 
 const CardItemGraph: FC<CardItemGraphProps> = ({ children }) => {
   return (
-    <div className="bg-back min-w-[1115px] min-h-[272px] rounded-3xl flex items-center justify-center">
+    <div className="bg-back w-full min-w-[1115px] min-h-[300px] rounded-3xl flex items-center justify-center">
       <div className="max-w-[557px] max-h-[108px]">
         {children}
       </div>

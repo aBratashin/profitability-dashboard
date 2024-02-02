@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const Line = () => {
-  const lineArray = (new Array(13).fill(
+  const lineArray = (new Array(30).fill(
       <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12"
            viewBox="0 0 2 12" fill="none">
         <path d="M0.898438 0V12" stroke="#070707" strokeOpacity="0.24" />
@@ -47,7 +47,7 @@ const Line = () => {
           <path d="M1.23828 0V22" stroke="#070707" strokeOpacity="0.24" />
         </svg>
         <div className="flex items-center gap-2">
-          <div className="text-blue">Сегодня</div>
+          <div className="text-blue cursor-pointer">Сегодня</div>
           <Image
             src="/img/arrow-right-blue.svg"
             width={24}
