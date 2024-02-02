@@ -4,24 +4,24 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 const SuisseIntl = localFont({
-    src: [
-      {
-        path: '../../src/fonts/SuisseIntl-Regular.otf',
-        weight: '400',
-      },
-      {
-        path: '../../src/fonts/SuisseIntl-Medium.otf',
-        weight: '500',
-      },
-      {
-        path: '../../src/fonts/SuisseIntl-SemiBold.otf',
-        weight: '600',
-      },
-      {
-        path: '../../src/fonts/SuisseIntl-Bold.otf',
-        weight: '700',
-      },
-    ],
+  src: [
+    {
+      path: '../../src/fonts/SuisseIntl-Regular.otf',
+      weight: '400',
+    },
+    {
+      path: '../../src/fonts/SuisseIntl-Medium.otf',
+      weight: '500',
+    },
+    {
+      path: '../../src/fonts/SuisseIntl-SemiBold.otf',
+      weight: '600',
+    },
+    {
+      path: '../../src/fonts/SuisseIntl-Bold.otf',
+      weight: '700',
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
- children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
