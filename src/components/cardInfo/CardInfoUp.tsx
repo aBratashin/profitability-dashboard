@@ -3,6 +3,8 @@ import React, { FC, useState } from 'react';
 import { CardInfoUpProps } from '@/components/cardInfo/CardInfoUp.props';
 import Image from 'next/image';
 import Category from '@/components/category/Category';
+import Clip from '/public/img/clip.svg'
+import ArrowRight from '/public/img/arrow-right-black.svg'
 
 const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, manager_id }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -15,13 +17,7 @@ const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, manager_id 
         {isHovered && (
           <div
             className="p-3 w-20 h-30 mr-[10px] bg-white rounded-3xl shadow-md flex items-center justify-center hover:cursor-pointer">
-            <Image
-              src="/img/clip.svg"
-              width={15}
-              height={15}
-              alt="arrow-right-black"
-              className="rounded-full"
-            />
+            <Clip className="rounded-full w-3.5 h-3.5" />
           </div>
         )}
         <div
@@ -29,12 +25,7 @@ const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, manager_id 
           <div>
             <div className="flex gap-3">
               <p className="text-3xl">{title}</p>
-              <Image
-                src="/img/arrow-right-black.svg"
-                width={10}
-                height={10}
-                alt="arrow-right-black"
-              />
+              <ArrowRight className="w-2.5 h-3.5 mt-3" />
             </div>
             <div className="flex gap-3 items-center">
               <p className="opacity-50 font-medium">{month} {year}</p>

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { TooltipProps } from '@/components/tooltip/Tooltip.props';
-import Image from 'next/image';
+import TooltipIcon from '/public/img/tooltip-part.svg'
 
 const Tooltip: FC<TooltipProps> = ({ type }) => {
   return (
@@ -8,13 +8,7 @@ const Tooltip: FC<TooltipProps> = ({ type }) => {
       <div className="font-medium text-base p-2.5 bg-gray rounded-lg">
         <div className="text-white">{type}</div>
       </div>
-      <Image
-        src="./img/tooltip-part.svg"
-        width={28}
-        height={14}
-        alt="tooltip-part"
-        className="w-auto h-auto"
-      />
+      <TooltipIcon className="w-7 h-[14]" />
     </div>
   );
 };

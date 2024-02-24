@@ -1,7 +1,7 @@
 'use client';
 import React, { FC, useState } from 'react';
 import { SearchProps } from '@/components/search/Search.props';
-import Image from 'next/image';
+import ArrowRight from '/public/img/arrow-right.svg';
 
 const Search: FC<SearchProps> = ({ ...props }) => {
   const [inputText, setInputText] = useState('');
@@ -18,12 +18,7 @@ const Search: FC<SearchProps> = ({ ...props }) => {
       {inputText && (
         <button
           className="absolute top-1.5 right-2 bg-[#898989] w-8 h-8 text-black rounded-full flex items-center justify-center">
-          <Image
-            src="./img/arrow-right.svg"
-            width={20}
-            height={20}
-            alt="arrow-right"
-          />
+          <ArrowRight className="w-5 h-5" />
         </button>
       )}
     </div>
