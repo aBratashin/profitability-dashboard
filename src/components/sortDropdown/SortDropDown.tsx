@@ -1,6 +1,9 @@
 import React, { FC } from 'react';
 import { SortDropDownProps } from '@/components/sortDropdown/SortDropDown.props';
 import Image from 'next/image';
+import HalfRed from '/public/img/half-red.svg'
+import FullRed from '/public/img/full-red.svg';
+import ArrowDown from '/public/img/arrow-down.svg'
 
 const getSortDropDownType = (category: SortDropDownProps['category']) => {
   if (category === 'manager') {
@@ -22,7 +25,7 @@ const SortDropDown: FC<SortDropDownProps> = ({ category, itemType }) => {
     >
       {itemType === 'all' && <div
         className="max-w-[50px] opacity-50 text-white px-3 py-1 ml-1 rounded-full bg-gray flex justify-center items-center">
-        <p>Все</p>
+        <span>Все</span>
       </div>}
 
       {category === 'manager' && itemType === 'default' &&
@@ -51,27 +54,11 @@ const SortDropDown: FC<SortDropDownProps> = ({ category, itemType }) => {
 
       {category === 'pay_date' && itemType === 'default' &&
         <div className="flex items-center gap-2 pl-2">
-          <Image
-            src="./img/half-red.svg"
-            width={18}
-            height={18}
-            alt="half-red"
-          />
-          <Image
-            src="./img/full-red.svg"
-            width={18}
-            height={18}
-            alt="full-red"
-          />
+          <HalfRed className="w-[18px] h-[18px]" />
+          <FullRed className="w-[18px] h-[18px]" />
         </div>}
       {textType}
-      <Image
-        src="/img/arrow-down.svg"
-        width={24}
-        height={24}
-        alt="User"
-        className="mr-4 rounded-full"
-      />
+      <ArrowDown className="w-[20px] h-[20px] rounded-full mr-4" />
     </button>
   );
 };

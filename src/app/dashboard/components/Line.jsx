@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import ArrowRightBlue from '/public/img/arrow-right-blue.svg'
 
 const Line = () => {
   const lineArray = (new Array(30).fill(
@@ -48,12 +48,7 @@ const Line = () => {
         </svg>
         <div className="flex items-center gap-2">
           <div className="text-blue cursor-pointer">Сегодня</div>
-          <Image
-            src="/img/arrow-right-blue.svg"
-            width={24}
-            height={24}
-            alt="arrow-right-blue"
-          />
+          <ArrowRightBlue className="w-6 h-6 mt-3" />
         </div>
       </div>
     </div>
