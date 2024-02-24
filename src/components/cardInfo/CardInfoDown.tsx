@@ -10,28 +10,28 @@ const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children, sum, pro
 
         <div className="flex justify-between">
           <div>
-            <p className="text-3xl">
+            <span className="text-3xl">
               {new Intl.NumberFormat('ru-RU', {
                 style: 'currency',
                 currency: 'RUB',
                 minimumFractionDigits: 0,
               }).format(price)}
-            </p>
+            </span>
             <InvoiceProgress type="Закрыт" sum={sum} />
             <div className="flex gap-1 opacity-50 font-medium">
-              <p>Остаток</p>
-              <p>
+              <span>Остаток</span>
+              <span>
                 {new Intl.NumberFormat('ru-RU', {
                   style: 'currency',
                   currency: 'RUB',
                   minimumFractionDigits: 0,
                 }).format(remain)}
-              </p>
+              </span>
             </div>
             <div className="mt-10">
-              <p>31 июл. 2023</p>
+              <span>31 июл. 2023</span>
               <div className="flex gap-5">
-                <p>13 нояб. 2023</p>
+                <span>13 нояб. 2023</span>
                 {children}
               </div>
             </div>
