@@ -2,6 +2,29 @@ import React, { FC } from 'react';
 import { DropdownItemProps } from '@/components/dropdownItem/DropdownItem.props';
 import Image from 'next/image';
 import classNames from 'classnames';
+import {
+  cvaCategoryManagerContainer,
+  cvaCategoryManagers,
+  cvaCategoryManagerTwo,
+  cvaCategoryPaydate,
+  cvaCategoryProjectBlue,
+  cvaCategoryProjectContainer,
+  cvaCategoryProjectGeneral,
+  cvaCategoryProjectGeneralBlue,
+  cvaCategoryProjectGeneralLightgreen,
+  cvaCategoryProjectGeneralPink,
+  cvaCategoryProjectGeneralPurple,
+  cvaCategoryProjectGeneralRed,
+  cvaCategoryProjectLightgreen,
+  cvaCategoryProjectPink,
+  cvaCategoryProjectPurple,
+  cvaCategoryProjectRed,
+  cvaContainer,
+  cvaSelectedImage,
+  cvaSubtext,
+  cvaText,
+  cvaWrapper,
+} from './DropdownItemStyles';
 
 const DropdownItem: FC<DropdownItemProps> = ({
                                                selected,
@@ -14,28 +37,28 @@ const DropdownItem: FC<DropdownItemProps> = ({
                                              }) => {
   return (
     <div>
-      <div className=" min-w-[300px] flex items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
+      <div className={cvaContainer()}>
+        <div className={cvaWrapper()}>
           {selected === 'yes' && (
             <Image
               src="./img/check-green.svg"
               width={20}
               height={20}
               alt="check-green"
-              className="w-auto h-auto"
+              className={cvaSelectedImage()}
             />
           )}
           {all === 'yes' ? (
-            <p className="text-sm font-medium">
-              Все <span className="opacity-35">(default)</span>
+            <p className={cvaText()}>
+              Все <span className={cvaSubtext()}>(default)</span>
             </p>
           ) : (
-            <p className="text-sm font-medium">{children}</p>
+            <p className={cvaText()}>{children}</p>
           )}
         </div>
         <div>
           {category === 'manager' && (
-            <div className="flex items-center">
+            <div className={cvaCategoryManagerContainer()}>
               {all === 'yes' ? (
                 <>
                   <Image
@@ -43,21 +66,21 @@ const DropdownItem: FC<DropdownItemProps> = ({
                     width={24}
                     height={24}
                     alt="manager_1"
-                    className="rounded-full border-2 border-white"
+                    className={cvaCategoryManagers()}
                   />
                   <Image
                     src="/img/manager_2.jpg"
                     width={24}
                     height={24}
                     alt="manager_2"
-                    className="rounded-full border-2 border-white m-[-8px]"
+                    className={cvaCategoryManagerTwo()}
                   />
                   <Image
                     src="/img/manager_3.jpg"
                     width={24}
                     height={24}
                     alt="manager_3"
-                    className="rounded-full border-2 border-white"
+                    className={cvaCategoryManagers()}
                   />
                 </>
               ) : (
@@ -66,36 +89,36 @@ const DropdownItem: FC<DropdownItemProps> = ({
                   width={24}
                   height={24}
                   alt="manager_1"
-                  className="rounded-full border-2 border-white"
+                  className={cvaCategoryManagers()}
                 />
               )}
             </div>
           )}
           {category === 'project' && (
-            <div className="flex gap-1">
+            <div className={cvaCategoryProjectContainer()}>
               {all === 'yes' ? (
                 <>
-                  <div className="w-3 h-3 bg-purple rounded-[3px]"></div>
-                  <div className="w-3 h-3 bg-lightgreen rounded-[3px]"></div>
-                  <div className="w-3 h-3 bg-pink rounded-[3px]"></div>
-                  <div className="w-3 h-3 bg-blue rounded-[3px]"></div>
-                  <div className="w-3 h-3 bg-red rounded-[3px]"></div>
+                  <div className={cvaCategoryProjectPurple()}></div>
+                  <div className={cvaCategoryProjectLightgreen()}></div>
+                  <div className={cvaCategoryProjectPink()}></div>
+                  <div className={cvaCategoryProjectBlue()}></div>
+                  <div className={cvaCategoryProjectRed()}></div>
                 </>
               ) : (
                 <div
-                  className={classNames(['w-3 h-3 rounded-[3px]'], {
-                    ['bg-purple']: color === 'purple',
-                    ['bg-lightgreen']: color === 'lightgreen',
-                    ['bg-pink']: color === 'pink',
-                    ['bg-blue']: color === 'blue',
-                    ['bg-red']: color === 'red',
+                  className={classNames([cvaCategoryProjectGeneral()], {
+                    [cvaCategoryProjectGeneralPurple()]: color === 'purple',
+                    [cvaCategoryProjectGeneralLightgreen()]: color === 'lightgreen',
+                    [cvaCategoryProjectGeneralPink()]: color === 'pink',
+                    [cvaCategoryProjectGeneralBlue()]: color === 'blue',
+                    [cvaCategoryProjectGeneralRed()]: color === 'red',
                   })}
                 ></div>
               )}
             </div>
           )}
           {category === 'pay_date' && (
-            <div className="flex gap-2">
+            <div className={cvaCategoryPaydate()}>
               {all === 'yes' ? (
                 <>
                   <Image

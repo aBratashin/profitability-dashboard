@@ -1,12 +1,13 @@
 import React, { FC } from 'react';
 import { DropdownContentProps } from '@/components/dropdownContent/DropdownContent.props';
 import DropdownItem from '@/components/dropdownItem/DropdownItem';
+import { cvaButton, cvaContainer, cvaText, cvaType } from './DropdownContentStyles';
 
 const DropdownContent: FC<DropdownContentProps> = ({ type }) => {
   return (
-    <div className="bg-white p-6 rounded-[32px] flex flex-col gap-4">
+    <div className={cvaContainer()}>
       {type === 'manager' &&
-        <div className="flex flex-col gap-4">
+        <div className={cvaType()}>
           <DropdownItem selected="no" category="manager" all="yes"></DropdownItem>
           <DropdownItem selected="yes" category="manager" all="no" manager_id={1}>Елизавета
             Которова</DropdownItem>
@@ -17,7 +18,7 @@ const DropdownContent: FC<DropdownContentProps> = ({ type }) => {
         </div>
       }
       {type === 'project' &&
-        <div className="flex flex-col gap-4">
+        <div className={cvaType()}>
           <DropdownItem selected="no" category="project" all="yes"></DropdownItem>
           <DropdownItem selected="yes" category="project" all="no" color="purple">Разработка
             сайта</DropdownItem>
@@ -29,7 +30,7 @@ const DropdownContent: FC<DropdownContentProps> = ({ type }) => {
         </div>
       }
       {type === 'pay_date' &&
-        <div className="flex flex-col gap-4">
+        <div className={cvaType()}>
           <DropdownItem selected="no" category="pay_date" all="yes"></DropdownItem>
           <DropdownItem selected="yes" category="pay_date" all="no"
                         circle_progress="full-red">Просроченные</DropdownItem>
@@ -39,8 +40,8 @@ const DropdownContent: FC<DropdownContentProps> = ({ type }) => {
             неделе</DropdownItem>
         </div>
       }
-      <button className="min-w-[300px] mt-8 px-2.5 py-[18px] rounded-[16px] text-white bg-gray">Показать <span
-        className="opacity-35">5</span></button>
+      <button className={cvaButton()}>Показать <span
+        className={cvaText()}>5</span></button>
     </div>
   );
 };

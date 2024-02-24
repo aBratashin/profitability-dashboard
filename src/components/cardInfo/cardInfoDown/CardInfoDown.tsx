@@ -1,16 +1,24 @@
 import React, { FC } from 'react';
-import { CardInfoDownProps } from '@/components/cardInfo/CardInfoDown.props';
+import { CardInfoDownProps } from '@/components/cardInfo/cardInfoDown/CardInfoDown.props';
 import Progress from '@/components/progress/Progress';
 import InvoiceProgress from '@/components/invoiceProgress/InvoiceProgress';
+import {
+  cvaContainer,
+  cvaDateBlock,
+  cvaDateEnd,
+  cvaPrice,
+  cvaProgress,
+  cvaRemains,
+  cvaWrapper,
+} from './CardInfoDownStyles';
 
 const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children, sum, progressData }) => {
   return (
     <div>
-      <div className="px-5 py-3 min-w-[500px] rounded-3xl bg-white font-medium">
-
-        <div className="flex justify-between">
+      <div className={cvaWrapper()}>
+        <div className={cvaContainer()}>
           <div>
-            <p className="text-3xl">
+            <p className={cvaPrice()}>
               {new Intl.NumberFormat('ru-RU', {
                 style: 'currency',
                 currency: 'RUB',
@@ -18,7 +26,7 @@ const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children, sum, pro
               }).format(price)}
             </p>
             <InvoiceProgress type="Закрыт" sum={sum} />
-            <div className="flex gap-1 opacity-50 font-medium">
+            <div className={cvaRemains()}>
               <p>Остаток</p>
               <p>
                 {new Intl.NumberFormat('ru-RU', {
@@ -28,17 +36,18 @@ const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children, sum, pro
                 }).format(remain)}
               </p>
             </div>
-            <div className="mt-10">
+            <div className={cvaDateBlock()}>
               <p>31 июл. 2023</p>
-              <div className="flex gap-5">
+              <div className={cvaDateEnd()}>
                 <p>13 нояб. 2023</p>
                 {children}
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col justify-center gap-6">
-            {progressData?.map(el => <Progress key={el.category} category={el.category} color={el.color} initialData={el.initialData}
+          <div className={cvaProgress()}>
+            {progressData?.map(el => <Progress key={el.category} category={el.category} color={el.color}
+                                               initialData={el.initialData}
                                                finalData={el.finalData} />)}
           </div>
         </div>

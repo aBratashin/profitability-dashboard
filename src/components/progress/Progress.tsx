@@ -1,24 +1,38 @@
 import React, { FC } from 'react';
 import { ProgressProps } from '@/components/progress/Progress.props';
 import classNames from 'classnames';
+import { cvaContainer } from '@/components/category/CategoryStyles';
+import {
+  cvaCategory,
+  cvaCategoryInfo,
+  cvaCategoryInitial,
+  cvaCategoryPlan,
+  cvaCategoryPlanFinal,
+  cvaCategoryPlanInfo,
+  cvaGray,
+  cvaGreen,
+  cvaLightwhite,
+  cvaRed,
+  cvaWrapper,
+} from '@/components/progress/ProgressStyles';
 
 const Progress: FC<ProgressProps> = ({ category, color, initialData, finalData }) => {
   return (
-    <div className={classNames(['w-[175px] h-[70px] rounded-2xl py-1 px-1'], {
-      ['bg-lightwhite']: color === 'white',
-      ['bg-green']: color === 'green',
-      ['bg-red']: color === 'red',
+    <div className={classNames([cvaContainer()], {
+      [cvaLightwhite()]: color === 'white',
+      [cvaGreen()]: color === 'green',
+      [cvaRed()]: color === 'red',
     })}>
-      <div className={classNames(['text-white flex justify-between px-2 py-1'], {
-        ['!text-gray']: color === 'white',
+      <div className={classNames([cvaWrapper()], {
+        [cvaGray()]: color === 'white',
       })}>
-        <div className="flex flex-col">
-          <span className="text-2xl font-medium">{initialData}{category === 'profit' ? '%' : ' ч'}</span>
-          <span className="text-sm opacity-70">{category === 'profit' ? ' факт' : ' всего'}</span>
+        <div className={cvaCategory()}>
+          <span className={cvaCategoryInitial()}>{initialData}{category === 'profit' ? '%' : ' ч'}</span>
+          <span className={cvaCategoryInfo()}>{category === 'profit' ? ' факт' : ' всего'}</span>
         </div>
-        <div className="flex flex-col pt-2">
-          <span className="text-base font-medium">{finalData}{category === 'profit' ? '%' : ' ч'}</span>
-          <span className="text-sm opacity-70">{category === 'profit' ? ' план' : ' оценка'}</span>
+        <div className={cvaCategoryPlan()}>
+          <span className={cvaCategoryPlanFinal()}>{finalData}{category === 'profit' ? '%' : ' ч'}</span>
+          <span className={cvaCategoryPlanInfo()}>{category === 'profit' ? ' план' : ' оценка'}</span>
         </div>
       </div>
     </div>
