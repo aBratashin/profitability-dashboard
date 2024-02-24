@@ -25,7 +25,7 @@ const SortDropDown: FC<SortDropDownProps> = ({ category, itemType }) => {
     >
       {itemType === 'all' && <div
         className="max-w-[50px] opacity-50 text-white px-3 py-1 ml-1 rounded-full bg-gray flex justify-center items-center">
-        <p>Все</p>
+        <span>Все</span>
       </div>}
 
       {category === 'manager' && itemType === 'default' &&
