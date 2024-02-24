@@ -4,7 +4,6 @@ import Progress from '@/components/progress/Progress';
 import InvoiceProgress from '@/components/invoiceProgress/InvoiceProgress';
 
 const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children, sum, progressData }) => {
-  console.log(progressData);
   return (
     <div>
       <div className="px-5 py-3 min-w-[500px] rounded-3xl bg-white font-medium">
@@ -39,7 +38,7 @@ const CardInfoDown: FC<CardInfoDownProps> = ({ price, remain, children, sum, pro
           </div>
 
           <div className="flex flex-col justify-center gap-6">
-            {progressData?.map(el => <Progress category={el.category} color={el.color} initialData={el.initialData}
+            {progressData?.map(el => <Progress key={el.category} category={el.category} color={el.color} initialData={el.initialData}
                                                finalData={el.finalData} />)}
           </div>
         </div>
