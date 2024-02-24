@@ -2,6 +2,10 @@ import React, { FC } from 'react';
 import { DropdownItemProps } from '@/components/dropdownItem/DropdownItem.props';
 import Image from 'next/image';
 import classNames from 'classnames';
+import CheckGreen from '/public/img/check-green.svg'
+import HalfYellow from '/public/img/half-yellow.svg'
+import HalfRed from '/public/img/full-red.svg'
+import FullRed from '/public/img/full-red.svg'
 
 const DropdownItem: FC<DropdownItemProps> = ({
                                                selected,
@@ -17,13 +21,7 @@ const DropdownItem: FC<DropdownItemProps> = ({
       <div className=" min-w-[300px] flex items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           {selected === 'yes' && (
-            <Image
-              src="./img/check-green.svg"
-              width={20}
-              height={20}
-              alt="check-green"
-              className="w-auto h-auto"
-            />
+            <CheckGreen className="w-5 h-5" />
           )}
           {all === 'yes' ? (
             <p className="text-sm font-medium">
@@ -98,24 +96,9 @@ const DropdownItem: FC<DropdownItemProps> = ({
             <div className="flex gap-2">
               {all === 'yes' ? (
                 <>
-                  <Image
-                    src="./img/half-yellow.svg"
-                    width={18}
-                    height={18}
-                    alt="half-yellow"
-                  />
-                  <Image
-                    src="./img/half-red.svg"
-                    width={18}
-                    height={18}
-                    alt="half-red"
-                  />
-                  <Image
-                    src="./img/full-red.svg"
-                    width={18}
-                    height={18}
-                    alt="full-red"
-                  />
+                  <HalfRed className="w-[18px] h-[18px]" />
+                  <HalfYellow className="w-[18px] h-[18px]" />
+                  <FullRed className="w-[18px] h-[18px]" />
                 </>
               ) : (
                 <Image
