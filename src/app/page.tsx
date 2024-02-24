@@ -7,7 +7,7 @@ export default function Home() {
       <div className="bg-white p-24 flex flex-col gap-8 rounded-3xl">
         <div className="flex items-center justify-center">
           <Image
-            src="/img/person.svg"
+            src="/img/Person.png"
             width={64}
             height={64}
             alt="User"
