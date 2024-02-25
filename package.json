@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-numberformat": "^8.10.0",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.5.1",
     "next": "14.1.0",

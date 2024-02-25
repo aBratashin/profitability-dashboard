@@ -1,4 +1,6 @@
 import React, { FC } from 'react';
+import '@formatjs/intl-numberformat/polyfill';
+import '@formatjs/intl-numberformat/locale-data/ru';
 import { InvoiceProgressProps } from '@/components/invoiceProgress/InvoiceProgress.props';
 import Image from 'next/image';
 import classNames from 'classnames';
