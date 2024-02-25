@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { ProgressProps } from '@/components/progress/Progress.props';
 import classNames from 'classnames';
-import { cvaContainer } from '@/components/category/CategoryStyles';
 import {
   cvaCategory,
   cvaCategoryInfo,
@@ -9,6 +8,7 @@ import {
   cvaCategoryPlan,
   cvaCategoryPlanFinal,
   cvaCategoryPlanInfo,
+  cvaContainer,
   cvaGray,
   cvaGreen,
   cvaLightwhite,

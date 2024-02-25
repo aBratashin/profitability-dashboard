@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import classNames from 'classnames';
 import { StageProgressProps } from './StageProgress.props';
 import Image from 'next/image';
+import { cvaContainer, cvaGreen, cvaImage, cvaText, cvaYellow, cvaRed } from '@/components/stageProgress/StageProgressStyles';
 
 const getDaysEnding = (number: number): string => {
   const lastDigit = number % 10;
@@ -38,18 +39,18 @@ const StageProgress: FC<StageProgressProps> = ({ color, progress, isExpired }) =
   const imgSrc = getImg(color, progress, isExpired);
 
   return (
-    <div className="flex items-center">
+    <div className={cvaContainer()}>
       <Image
         src={imgSrc}
         width={18}
         height={18}
         alt="stage-progress"
-        className="mr-2"
+        className={cvaImage()}
       />
-      <span className={classNames(['text-sm font-medium'], {
-        ['text-green']: color === 'green',
-        ['text-yellow']: color === 'yellow',
-        ['text-red']: color === 'red',
+      <span className={classNames([cvaText], {
+        [cvaGreen()]: color === 'green',
+        [cvaYellow()]: color === 'yellow',
+        [cvaRed()]: color === 'red',
       })}>
                 {progress} {daysEnding}
         {isExpired && ' назад'}

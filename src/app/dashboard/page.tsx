@@ -3,11 +3,12 @@ import StageItem from '@/components/stageItem/StageItem';
 import React from 'react';
 import CardItemGraph from '@/components/cardItemGraph/CardItemGraph';
 import InvoiceProgress from '@/components/invoiceProgress/InvoiceProgress';
-import CardInfoUp from '@/components/cardInfo/cardInfoUp/CardInfoUp';
-import CardInfoDown from '@/components/cardInfo/cardInfoDown/CardInfoDown';
+
 import StageProgress from '@/components/stageProgress/StageProgress';
 import Header from '@/app/dashboard/components/Header';
 import Line from '@/app/dashboard/components/Line';
+import CardInfoUp from '@/components/cardInfo/cardInfoUp/CardInfoUp';
+import CardInfoDown from '@/components/cardInfo/cardInfoDown/CardInfoDown';
 
 export const metadata: Metadata = {
   title: 'Dashboard',

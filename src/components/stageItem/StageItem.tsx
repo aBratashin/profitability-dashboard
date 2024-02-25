@@ -1,35 +1,52 @@
 import React, { FC } from 'react';
 import { StageItemProps } from '@/components/stageItem/StageItem.props';
 import classNames from 'classnames';
+import {
+  cvaButtonContainer,
+  cvaButtonGreen,
+  cvaButtonRed,
+  cvaButtonWhite,
+  cvaButtonYellow,
+  cvaChildren,
+  cvaContainer,
+  cvaItemContainer,
+  cvaItemHours,
+  cvaItemInfo,
+  cvaPackageContainer,
+  cvaPackageGreen,
+  cvaPackageRed,
+  cvaPackageWhite,
+  cvaPackageYellow,
+} from '@/components/stageItem/StageItemStyles';
 
 const StageItem: FC<StageItemProps> = ({ children, timeColor, profitColor, hours, percentage }) => {
   return (
-    <div className="min-w-[280px] flex flex-col gap-1">
-      <div className={classNames(['w-full rounded-xl flex justify-between p-2'], {
-        ['bg-lightgray text-gray']: timeColor === 'white',
-        ['bg-green text-white']: timeColor === 'green',
-        ['bg-[#FFDB6C] text-gray']: timeColor === 'yellow',
-        ['bg-red text-white']: timeColor === 'red',
+    <div className={cvaContainer()}>
+      <div className={classNames([cvaButtonContainer()], {
+        [cvaButtonWhite()]: timeColor === 'white',
+        [cvaButtonGreen()]: timeColor === 'green',
+        [cvaButtonYellow()]: timeColor === 'yellow',
+        [cvaButtonRed()]: timeColor === 'red',
       })}>
-        <div className="flex flex-col">
-          <span className="font-medium text-2xl">{hours} ч</span>
-          <span className="text-xs text-lightwhite">Всего</span>
+        <div className={cvaItemContainer()}>
+          <span className={cvaItemHours()}>{hours} ч</span>
+          <span className={cvaItemInfo()}>Всего</span>
         </div>
-        <div className="flex flex-col">
-          <span className="font-medium text-2xl">{hours} ч</span>
-          <span className="text-xs text-lightwhite">Оценка</span>
+        <div className={cvaItemContainer()}>
+          <span className={cvaItemHours()}>{hours} ч</span>
+          <span className={cvaItemInfo()}>Оценка</span>
         </div>
       </div>
-      <div className={classNames(['w-full rounded-xl flex justify-between px-2 py-0.5 font-medium'], {
-        ['bg-lightgray text-gray']: profitColor === 'white',
-        ['bg-green text-white']: profitColor === 'green',
-        ['bg-[#FFDB6C] text-gray']: profitColor === 'yellow',
-        ['bg-red text-white']: profitColor === 'red',
+      <div className={classNames([cvaPackageContainer()], {
+        [cvaPackageWhite()]: profitColor === 'white',
+        [cvaPackageGreen()]: profitColor === 'green',
+        [cvaPackageYellow()]: profitColor === 'yellow',
+        [cvaPackageRed()]: profitColor === 'red',
       })}>
         <span>Пакет часов</span>
         <span>{percentage}%</span>
       </div>
-      <div className="self-end">{children}</div>
+      <div className={cvaChildren()}>{children}</div>
     </div>
   );
 };

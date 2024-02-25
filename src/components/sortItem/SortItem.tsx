@@ -1,12 +1,13 @@
 import React, { FC } from 'react';
 import { SortItemProps } from '@/components/sortItem/SortItem.props';
 import classNames from 'classnames';
+import { cvaButtonContainer, cvaTransparent, cvaWhite } from '@/components/sortItem/SortItemStyles';
 
 const SortItem: FC<SortItemProps> = ({ state, children }) => {
   return (
-    <button className={classNames(['px-3 py-1 rounded-2xl font-medium'], {
-      ['bg-white']: state === 'selected',
-      ['bg-transparent']: state === 'default',
+    <button className={classNames([cvaButtonContainer()], {
+      [cvaWhite()]: state === 'selected',
+      [cvaTransparent()]: state === 'default',
     })}>
       {children}
     </button>
