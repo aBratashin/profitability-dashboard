@@ -36,7 +36,7 @@ const DropdownItem: FC<DropdownItemProps> = ({
                                                all,
                                                children,
                                                color,
-                                               manager_id,
+                                               src,
                                                circle_progress,
                                              }) => {
   return (
@@ -89,7 +89,7 @@ const DropdownItem: FC<DropdownItemProps> = ({
                 </>
               ) : (
                 <Image
-                  src={`/img/manager_${manager_id}.jpg`}
+                  src={src || ''}
                   width={24}
                   height={24}
                   alt="manager_1"

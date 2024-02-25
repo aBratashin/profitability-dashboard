@@ -6,6 +6,6 @@ export interface DropdownItemProps extends DetailedHTMLProps<HTMLAttributes<HTML
   category: 'manager' | 'project' | 'pay_date',
   all: 'yes' | 'no',
   color?: 'purple' | 'lightgreen' | 'pink' | 'blue' | 'red',
-  manager_id?: 1 | 2 | 3
+  src?: string,
   circle_progress?: 'half-yellow' | 'half-red' | 'full-red'
 }

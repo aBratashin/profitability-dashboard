@@ -21,7 +21,7 @@ export default function Auth() {
       <Line />
       <div className="flex items-center gap-2 w-full p-4">
         <div className="flex flex-col gap-2">
-          <CardInfoUp title="Готэк" month="Октябрь" year={2023} type={'seo'} manager_id={1} />
+          <CardInfoUp title="Готэк" month="Октябрь" year={2023} type={'seo'} src={'/img/manager_1.jpg'} />
           <CardInfoDown price={500000} remain={110000} sum={390000} progressData={[
             { category: 'time', color: 'white', initialData: 24, finalData: 76 },
             { category: 'profit', color: 'green', initialData: 20, finalData: 10 },
@@ -42,7 +42,7 @@ export default function Auth() {
       </div>
       <div className="flex items-center gap-2 w-full p-4">
         <div className="flex flex-col gap-2">
-          <CardInfoUp title="HyperPC" month="Октябрь" year={2023} type={'hours'} manager_id={2} />
+          <CardInfoUp title="Готэк" month="Октябрь" year={2023} type={'seo'} src={'/img/manager_2.jpg'} />
           <CardInfoDown price={500000} remain={110000} sum={390000} progressData={[
             { category: 'time', color: 'white', initialData: 24, finalData: 76 },
             { category: 'profit', color: 'green', initialData: 20, finalData: 10 },
@@ -63,7 +63,7 @@ export default function Auth() {
       </div>
       <div className="flex items-center gap-2 w-full p-4">
         <div className="flex flex-col gap-2">
-          <CardInfoUp title="iBankrot" month="Октябрь" year={2023} type={'dev'} manager_id={3} />
+          <CardInfoUp title="Готэк" month="Октябрь" year={2023} type={'seo'} src={'/img/manager_3.jpg'} />
           <CardInfoDown price={500000} remain={110000} sum={390000} progressData={[
             { category: 'time', color: 'white', initialData: 24, finalData: 76 },
             { category: 'profit', color: 'red', initialData: 5, finalData: 10 },
