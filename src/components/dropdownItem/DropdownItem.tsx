@@ -24,7 +24,11 @@ import {
   cvaSubtext,
   cvaText,
   cvaWrapper,
+  cvaCategoryPaydateImg
 } from './DropdownItemStyles';
+import HalfYellow from '/public/img/half-yellow.svg'
+import HalfRed from '/public/img/half-red.svg'
+import FullRed from '/public/img/full-red.svg'
 
 const DropdownItem: FC<DropdownItemProps> = ({
                                                selected,
@@ -121,24 +125,9 @@ const DropdownItem: FC<DropdownItemProps> = ({
             <div className={cvaCategoryPaydate()}>
               {all === 'yes' ? (
                 <>
-                  <Image
-                    src="./img/half-yellow.svg"
-                    width={18}
-                    height={18}
-                    alt="half-yellow"
-                  />
-                  <Image
-                    src="./img/half-red.svg"
-                    width={18}
-                    height={18}
-                    alt="half-red"
-                  />
-                  <Image
-                    src="./img/full-red.svg"
-                    width={18}
-                    height={18}
-                    alt="full-red"
-                  />
+                  <HalfYellow className={cvaCategoryPaydateImg()} />
+                  <HalfRed className={cvaCategoryPaydateImg()} />
+                  <FullRed className={cvaCategoryPaydateImg()} />
                 </>
               ) : (
                 <Image

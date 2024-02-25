@@ -14,6 +14,8 @@ import {
   cvaTitleImage,
   cvaTitleText,
 } from './CardInfoUpStyles';
+import Clip from '/public/img/clip.svg'
+import ArrowRightBlack from '/public/img/arrow-right-black.svg'
 
 const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, manager_id }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,13 +28,7 @@ const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, manager_id 
         {isHovered && (
           <div
             className={cvaPinning()}>
-            <Image
-              src="/img/clip.svg"
-              width={15}
-              height={15}
-              alt="arrow-right-black"
-              className={cvaPinningImage()}
-            />
+            <Clip className={cvaPinningImage()} />
           </div>
         )}
         <div
@@ -40,12 +36,7 @@ const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, manager_id 
           <div>
             <div className={cvaTitle()}>
               <p className={cvaTitleText()}>{title}</p>
-              <Image
-                src="/img/arrow-right-black.svg"
-                width={10}
-                height={10}
-                alt={cvaTitleImage()}
-              />
+              <ArrowRightBlack className={cvaTitleImage()} />
             </div>
             <div className={cvaInfo()}>
               <p className={cvaDate()}>{month} {year}</p>
