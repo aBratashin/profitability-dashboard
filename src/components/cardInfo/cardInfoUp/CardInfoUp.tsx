@@ -17,7 +17,7 @@ import {
 import Clip from '/public/img/clip.svg'
 import ArrowRightBlack from '/public/img/arrow-right-black.svg'
 
-const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, manager_id }) => {
+const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, src }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -44,7 +44,7 @@ const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, manager_id 
             </div>
           </div>
           <Image
-            src={`/img/manager_${manager_id}.jpg`}
+            src={src}
             width={70}
             height={60}
             alt="arrow-right-black"

@@ -9,11 +9,11 @@ const DropdownContent: FC<DropdownContentProps> = ({ type }) => {
       {type === 'manager' &&
         <div className={cvaType()}>
           <DropdownItem selected="no" category="manager" all="yes"></DropdownItem>
-          <DropdownItem selected="yes" category="manager" all="no" manager_id={1}>Елизавета
+          <DropdownItem selected="yes" category="manager" all="no" src='/img/manager_1.jpg'>Елизавета
             Которова</DropdownItem>
-          <DropdownItem selected="yes" category="manager" all="no" manager_id={2}>Дмитрий
+          <DropdownItem selected="yes" category="manager" all="no" src='/img/manager_2.jpg'>Дмитрий
             Голиков</DropdownItem>
-          <DropdownItem selected="no" category="manager" all="no" manager_id={3}>Ксения
+          <DropdownItem selected="no" category="manager" all="no" src='/img/manager_3.jpg'>Ксения
             Гривская</DropdownItem>
         </div>
       }
