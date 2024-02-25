@@ -8,7 +8,7 @@ export const cvaPinning = cva(
 
 export const cvaPinningImage = cva(
   [
-    'rounded-full',
+    'rounded-full w-[15px] h-[15px]',
   ],
 );
 
@@ -32,7 +32,7 @@ export const cvaTitleText = cva(
 
 export const cvaTitleImage = cva(
   [
-    'arrow-right-black',
+    'arrow-right-black w-[10px] h-[15px] mt-3',
   ],
 );
 

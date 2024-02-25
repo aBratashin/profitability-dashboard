@@ -125,3 +125,9 @@ export const cvaCategoryPaydate = cva(
     'flex gap-2',
   ],
 );
+
+export const cvaCategoryPaydateImg = cva(
+  [
+    'w-[18px] h-[18px]',
+  ],
+);
