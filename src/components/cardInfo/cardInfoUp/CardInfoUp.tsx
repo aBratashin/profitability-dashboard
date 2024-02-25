@@ -16,23 +16,35 @@ import {
 } from './CardInfoUpStyles';
 import Clip from '/public/img/clip.svg'
 import ArrowRightBlack from '/public/img/arrow-right-black.svg'
+import { motion, AnimatePresence } from 'framer-motion';
 
 const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, src }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isPinningVisible, setPinningVisible] = useState(false);
+
+  const handleDoubleClick = () => {
+    setPinningVisible(!isPinningVisible);
+  };
 
   return (
-    <div
-      onDoubleClick={() => setIsHovered(prev => !prev)}
+    <motion.div onDoubleClick={handleDoubleClick}
+                layout
+                transition={{ duration: 0.5 }}
     >
       <div className="flex">
-        {isHovered && (
-          <div
-            className={cvaPinning()}>
-            <Clip className={cvaPinningImage()} />
-          </div>
-        )}
-        <div
-          className={cvaContainer()}>
+        <AnimatePresence>
+          {isPinningVisible && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className={cvaPinning()}
+            >
+              <Clip className={cvaPinningImage()} />
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <div className={cvaContainer()}>
           <div>
             <div className={cvaTitle()}>
               <p className={cvaTitleText()}>{title}</p>
@@ -44,7 +56,7 @@ const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, src }) => {
             </div>
           </div>
           <Image
-            src={src}
+            src={src || ''}
             width={70}
             height={60}
             alt="arrow-right-black"
@@ -52,7 +64,7 @@ const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, src }) => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
