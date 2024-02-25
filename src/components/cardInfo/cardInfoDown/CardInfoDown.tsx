@@ -1,3 +1,5 @@
+import '@formatjs/intl-numberformat/polyfill';
+import '@formatjs/intl-numberformat/locale-data/ru';
 import React, { FC } from 'react';
 import { CardInfoDownProps } from '@/components/cardInfo/cardInfoDown/CardInfoDown.props';
 import Progress from '@/components/progress/Progress';
