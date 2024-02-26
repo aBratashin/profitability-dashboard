@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import ClickUp from '/public/img/clickUp.svg';
-import AuthButton from '@/shared/ui/button/authButton/AuthButton';
+import AuthButton from "@/shared/ui/Button/authButton/AuthButton";
 
 const Auth = () => {
   return (

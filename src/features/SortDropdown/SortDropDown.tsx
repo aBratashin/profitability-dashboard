@@ -34,6 +34,7 @@ const SortDropDown: FC<SortDropDownProps> = ({category, itemType}) => {
     return (
         <button
             className={cvaButtonContainer()}
+            style={{borderColor: '#e4e4e4'}}
         >
             {itemType === 'all' && <div
                 className={cvaAll()}>
