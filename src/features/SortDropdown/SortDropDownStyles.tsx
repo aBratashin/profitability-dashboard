@@ -59,9 +59,3 @@ export const cvaPayDateImg = cva(
     'w-[18px] h-[18px]',
   ],
 );
-
-export const cvaArrow = cva(
-  [
-    'w-[20px] h-[20px] rounded-full mr-4',
-  ],
-);

@@ -1,5 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
-import { CategoryProps } from '@/components/category/Category.props';
+import { CategoryProps } from '@/components/Category/Category.props';
 
 export interface CardInfoUpProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   title: string;

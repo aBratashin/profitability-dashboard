@@ -20,19 +20,13 @@ export const cvaContainer = cva(
 
 export const cvaTitle = cva(
   [
-    'flex gap-3',
+    'flex items-center gap-3',
   ],
 );
 
 export const cvaTitleText = cva(
   [
     'text-3xl',
-  ],
-);
-
-export const cvaTitleImage = cva(
-  [
-    'arrow-right-black w-[10px] h-[15px] mt-3',
   ],
 );
 

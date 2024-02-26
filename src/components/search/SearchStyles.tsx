@@ -14,7 +14,7 @@ export const cvaInput = cva(
 
 export const cvaButton = cva(
   [
-    'absolute top-1.5 right-2 bg-[#898989] w-8 h-8 text-black rounded-full flex items-center justify-center',
+    'absolute top-1.5 right-2 bg-[#898989] w-8 bg h-8 text-black rounded-full flex items-center justify-center',
   ],
 );
 
