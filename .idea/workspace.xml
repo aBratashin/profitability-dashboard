@@ -4,72 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4b97c7a-f430-46d0-9864-e81e074ba679" name="Changes" comment="FSD V1.0">
-      <change afterPath="$PROJECT_DIR$/src/pages/Auth/AuthStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Main/MainStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Line/LineStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/Category.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Category/Category.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/Category.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Category/Category.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/CategoryStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Category/CategoryStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cardInfo/cardInfoDown/CardInfoDown.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/CardInfo/CardInfoDown/CardInfoDown.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cardInfo/cardInfoDown/CardInfoDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/CardInfo/CardInfoDown/CardInfoDown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cardInfo/cardInfoDown/CardInfoDownStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/CardInfo/CardInfoDown/CardInfoDownStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cardInfo/cardInfoUp/CardInfoUp.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/CardInfo/CardInfoUp/CardInfoUp.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cardInfo/cardInfoUp/CardInfoUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/CardInfo/CardInfoUp/CardInfoUp.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cardInfo/cardInfoUp/CardInfoUpStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/CardInfo/CardInfoUp/CardInfoUpStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cardItemGraph/CardItemGraph.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/CardItemGraph/CardItemGraph.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cardItemGraph/CardItemGraph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/CardItemGraph/CardItemGraph.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cardItemGraph/CardItemGraphStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/CardItemGraph/CardItemGraphStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdownContent/DropdownContent.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/DropdownContent/DropdownContent.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdownContent/DropdownContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/DropdownContent/DropdownContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdownContent/DropdownContentStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/DropdownContent/DropdownContentStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdownItem/DropdownItem.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/DropdownItem/DropdownItem.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdownItem/DropdownItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/DropdownItem/DropdownItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdownItem/DropdownItemStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/DropdownItem/DropdownItemStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/invoiceProgress/InvoiceProgress.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/InvoiceProgress/InvoiceProgress.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/invoiceProgress/InvoiceProgress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/InvoiceProgress/InvoiceProgress.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/invoiceProgress/InvoiceProgressStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/InvoiceProgress/InvoiceProgressStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/line/Line.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Line/Line.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/progress/Progress.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/progress/Progress.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/progress/Progress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/progress/Progress.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/progress/ProgressStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/progress/ProgressStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/Search.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Search/Search.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Search/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/SearchStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Search/SearchStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sortItem/SortItem.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/SortItem/SortItem.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sortItem/SortItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/SortItem/SortItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sortItem/SortItemStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/SortItem/SortItemStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stageInvoiceAlert/StageInvoiceAlert.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/StageInvoiceAlert/StageInvoiceAlert.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stageInvoiceAlert/StageInvoiceAlert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/StageInvoiceAlert/StageInvoiceAlert.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stageInvoiceAlert/StageInvoiceAlertStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/StageInvoiceAlert/StageInvoiceAlertStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stageItem/StageItem.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/StageItem/StageItem.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stageItem/StageItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/StageItem/StageItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stageItem/StageItemStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/StageItem/StageItemStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stageProgress/StageProgress.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/StageProgress/StageProgress.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stageProgress/StageProgress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/StageProgress/StageProgress.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stageProgress/StageProgressStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/StageProgress/StageProgressStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tooltip/Tooltip.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Tooltip/Tooltip.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tooltip/Tooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Tooltip/Tooltip.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tooltip/TooltipStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Tooltip/TooltipStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth/Auth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/Arrow/arrowRightBlack/ArrowRightBlack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Arrow/ArrowRightBlack/ArrowRightBlack.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/Arrow/arrowRightBlack/ArrowRightBlackStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Arrow/ArrowRightBlack/ArrowRightBlackStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/button/authButton/AuthButton.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Button/AuthButton/AuthButton.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/button/authButton/AuthButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Button/AuthButton/AuthButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/button/authButton/AuthButtonStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Button/AuthButton/AuthButtonStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/button/clearButton/ClearButton.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Button/ClearButton/ClearButton.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/button/clearButton/ClearButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Button/ClearButton/ClearButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/button/clearButton/ClearButtonStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Button/ClearButton/ClearButtonStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+    <list default="true" id="a4b97c7a-f430-46d0-9864-e81e074ba679" name="Changes" comment="Add FSD, complete cva">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +66,7 @@
       <workItem from="1708943053481" duration="75000" />
       <workItem from="1708943149582" duration="942000" />
       <workItem from="1709038452431" duration="357000" />
-      <workItem from="1709038833597" duration="2767000" />
+      <workItem from="1709038833597" duration="3102000" />
     </task>
     <task id="LOCAL-00001" summary="FSD V1.0">
       <option name="closed" value="true" />
@@ -140,7 +76,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708943887395</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add FSD, complete cva">
+      <option name="closed" value="true" />
+      <created>1709041840817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709041840817</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add FSD, complete cva">
+      <option name="closed" value="true" />
+      <created>1709041925872</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709041925872</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +100,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FSD V1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="FSD V1.0" />
+    <MESSAGE value="Add FSD, complete cva" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add FSD, complete cva" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
