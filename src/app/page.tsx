@@ -1,9 +1,9 @@
-import Auth from '@/pages/auth/Auth';
+import Auth from '@/pages/Auth/Auth';
 
 export default function Home() {
-  return (
-    <>
-      <Auth />
-    </>
-  );
+    return (
+        <>
+            <Auth/>
+        </>
+    );
 }
