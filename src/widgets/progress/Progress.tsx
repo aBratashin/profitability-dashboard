@@ -2,18 +2,18 @@ import React, {FC} from 'react';
 import {ProgressProps} from '@/widgets/progress/Progress.props';
 import classNames from 'classnames';
 import {
-  cvaCategory,
-  cvaCategoryInfo,
-  cvaCategoryInitial,
-  cvaCategoryPlan,
-  cvaCategoryPlanFinal,
-  cvaCategoryPlanInfo,
-  cvaContainer,
-  cvaGray,
-  cvaGreen,
-  cvaLightwhite,
-  cvaRed,
-  cvaWrapper,
+    cvaCategory,
+    cvaCategoryInfo,
+    cvaCategoryInitial,
+    cvaCategoryPlan,
+    cvaCategoryPlanFinal,
+    cvaCategoryPlanInfo,
+    cvaContainer,
+    cvaGray,
+    cvaGreen,
+    cvaLightwhite,
+    cvaRed,
+    cvaWrapper,
 } from '@/widgets/progress/ProgressStyles';
 
 const Progress: FC<ProgressProps> = ({category, color, initialData, finalData}) => {

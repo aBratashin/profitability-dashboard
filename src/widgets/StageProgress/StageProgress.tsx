@@ -3,12 +3,12 @@ import classNames from 'classnames';
 import {StageProgressProps} from './StageProgress.props';
 import Image from 'next/image';
 import {
-  cvaContainer,
-  cvaGreen,
-  cvaImage,
-  cvaRed,
-  cvaText,
-  cvaYellow
+    cvaContainer,
+    cvaGreen,
+    cvaImage,
+    cvaRed,
+    cvaText,
+    cvaYellow
 } from '@/widgets/StageProgress/StageProgressStyles';
 
 const getDaysEnding = (number: number): string => {

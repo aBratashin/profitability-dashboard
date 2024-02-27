@@ -2,21 +2,21 @@ import React, {FC} from 'react';
 import {StageItemProps} from '@/widgets/StageItem/StageItem.props';
 import classNames from 'classnames';
 import {
-  cvaButtonContainer,
-  cvaButtonGreen,
-  cvaButtonRed,
-  cvaButtonWhite,
-  cvaButtonYellow,
-  cvaChildren,
-  cvaContainer,
-  cvaItemContainer,
-  cvaItemHours,
-  cvaItemInfo,
-  cvaPackageContainer,
-  cvaPackageGreen,
-  cvaPackageRed,
-  cvaPackageWhite,
-  cvaPackageYellow,
+    cvaButtonContainer,
+    cvaButtonGreen,
+    cvaButtonRed,
+    cvaButtonWhite,
+    cvaButtonYellow,
+    cvaChildren,
+    cvaContainer,
+    cvaItemContainer,
+    cvaItemHours,
+    cvaItemInfo,
+    cvaPackageContainer,
+    cvaPackageGreen,
+    cvaPackageRed,
+    cvaPackageWhite,
+    cvaPackageYellow,
 } from '@/widgets/StageItem/StageItemStyles';
 
 const StageItem: FC<StageItemProps> = ({children, timeColor, profitColor, hours, percentage}) => {

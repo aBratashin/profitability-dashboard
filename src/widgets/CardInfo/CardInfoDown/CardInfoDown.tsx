@@ -5,13 +5,13 @@ import {CardInfoDownProps} from '@/widgets/CardInfo/CardInfoDown/CardInfoDown.pr
 import Progress from '@/widgets/progress/Progress';
 import InvoiceProgress from '@/widgets/InvoiceProgress/InvoiceProgress';
 import {
-  cvaContainer,
-  cvaDateBlock,
-  cvaDateEnd,
-  cvaPrice,
-  cvaProgress,
-  cvaRemains,
-  cvaWrapper,
+    cvaContainer,
+    cvaDateBlock,
+    cvaDateEnd,
+    cvaPrice,
+    cvaProgress,
+    cvaRemains,
+    cvaWrapper,
 } from './CardInfoDownStyles';
 
 const CardInfoDown: FC<CardInfoDownProps> = ({price, remain, children, sum, progressData}) => {

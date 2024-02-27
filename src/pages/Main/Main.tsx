@@ -7,7 +7,7 @@ import StageProgress from '@/widgets/StageProgress/StageProgress';
 import CardItemGraph from '@/widgets/CardItemGraph/CardItemGraph';
 import StageItem from '@/widgets/StageItem/StageItem';
 import InvoiceProgress from '@/widgets/InvoiceProgress/InvoiceProgress';
-import {cvaCardInfo, cvaContainer, cvaWrapper} from "@/pages/Main/MainStyles";
+import {cvaCardInfo, cvaContainer, cvaWrapper} from "@/app/styles/MainStyles";
 
 const Main = () => {
     return (

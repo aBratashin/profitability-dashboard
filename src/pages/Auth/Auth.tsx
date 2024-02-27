@@ -3,14 +3,14 @@ import Image from 'next/image';
 import ClickUp from '/public/img/clickUp.svg';
 import AuthButton from "@/features/Button/AuthButton/AuthButton";
 import {
-  cvaClickUp,
-  cvaClickUpImage,
-  cvaContainer,
-  cvaPersonImage,
-  cvaPersonInfo,
-  cvaPersonTitle,
-  cvaWrapper
-} from "@/pages/Auth/AuthStyles";
+    cvaClickUp,
+    cvaClickUpImage,
+    cvaContainer,
+    cvaPersonImage,
+    cvaPersonInfo,
+    cvaPersonTitle,
+    cvaWrapper
+} from "@/app/styles/AuthStyles";
 
 const Auth = () => {
     return (
