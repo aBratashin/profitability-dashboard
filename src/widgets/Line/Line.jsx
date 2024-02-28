@@ -1,5 +1,4 @@
 import React from 'react';
-import ArrowRight from '/public/img/arrow-right.svg';
 import {
   cvaContainer,
   cvaFirstLineTitle,
@@ -9,6 +8,7 @@ import {
   cvaSecondLineTitle,
   cvaSecondLineWrapper,
 } from '@/widgets/Line/LineStyles';
+import ArrowRightBlue from '@/shared/ui/Arrow/ArrowRightBlue/ArrowRightBlue';
 
 const Line = () => {
   const lineArray = (new Array(30).fill(
@@ -55,7 +55,7 @@ const Line = () => {
 
         <div className={cvaSecondLineTitle()}>
           <div className={cvaSecondLineText()}>Сегодня</div>
-          <ArrowRight />
+          <ArrowRightBlue />
         </div>
       </div>
     </div>
