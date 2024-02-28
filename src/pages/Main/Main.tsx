@@ -21,7 +21,7 @@ const Main = () => {
             { category: 'time', color: 'white', initialData: 24, finalData: 76 },
             { category: 'profit', color: 'green', initialData: 20, finalData: 10 },
           ]}>
-            <StageProgress color="green" isExpired={false} progress={20} />
+            <StageProgress isExpired={false} progress={20} />
           </CardInfoDown>
         </div>
         <CardItemGraph>
@@ -42,7 +42,7 @@ const Main = () => {
             { category: 'time', color: 'white', initialData: 24, finalData: 76 },
             { category: 'profit', color: 'green', initialData: 20, finalData: 10 },
           ]}>
-            <StageProgress color="green" isExpired={false} progress={20} />
+            <StageProgress isExpired={false} progress={20} />
           </CardInfoDown>
         </div>
         <CardItemGraph>
@@ -63,7 +63,7 @@ const Main = () => {
             { category: 'time', color: 'white', initialData: 24, finalData: 76 },
             { category: 'profit', color: 'red', initialData: 5, finalData: 10 },
           ]}>
-            <StageProgress color="red" isExpired={true} progress={1} />
+            <StageProgress isExpired={true} progress={1} />
           </CardInfoDown>
         </div>
         <CardItemGraph>
