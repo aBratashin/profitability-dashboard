@@ -1,13 +1,11 @@
 import React, { FC } from 'react';
-import { DropdownItemProps, Images } from '@/widgets/DropdownItem/DropdownItem.props';
+import { DropdownItemProps } from '@/widgets/DropdownItem/DropdownItem.props';
 import Image from 'next/image';
 import classNames from 'classnames';
 import {
   cvaCategoryManagerContainer,
   cvaCategoryManagers,
   cvaCategoryPaydate,
-  cvaCategoryPaydateImg,
-  cvaCategoryProjectBlue,
   cvaCategoryProjectContainer,
   cvaCategoryProjectGeneral,
   cvaCategoryProjectGeneralBlue,
@@ -15,39 +13,14 @@ import {
   cvaCategoryProjectGeneralPink,
   cvaCategoryProjectGeneralPurple,
   cvaCategoryProjectGeneralRed,
-  cvaCategoryProjectLightgreen,
-  cvaCategoryProjectPink,
-  cvaCategoryProjectPurple,
-  cvaCategoryProjectRed,
   cvaContainer,
   cvaSelectedImage,
   cvaSubtext,
   cvaText,
   cvaWrapper,
 } from './DropdownItemStyles';
-import HalfYellow from '/public/img/half-yellow.svg';
-import HalfRed from '/public/img/half-red.svg';
-import FullRed from '/public/img/full-red.svg';
+import { ItemCategories } from '@/entities/ItemCategories/ItemCategories';
 
-const images: Images = {
-  manager: [
-    { id: 1, src: '/img/manager_1.jpg', title: 'manager_1' },
-    { id: 2, src: '/img/manager_2.jpg', title: 'manager_2' },
-    { id: 3, src: '/img/manager_3.jpg', title: 'manager_3' },
-  ],
-  project: [
-    { id: 1, item: <div className={cvaCategoryProjectPurple()}></div>, title: 'project_1' },
-    { id: 2, item: <div className={cvaCategoryProjectLightgreen()}></div>, title: 'project_2' },
-    { id: 3, item: <div className={cvaCategoryProjectPink()}></div>, title: 'project_3' },
-    { id: 4, item: <div className={cvaCategoryProjectBlue()}></div>, title: 'project_4' },
-    { id: 5, item: <div className={cvaCategoryProjectRed()}></div>, title: 'project_5' },
-  ],
-  payDate: [
-    { id: 1, item: <HalfYellow className={cvaCategoryPaydateImg()} />, title: 'payDate_1' },
-    { id: 2, item: <HalfRed className={cvaCategoryPaydateImg()} />, title: 'payDate_2' },
-    { id: 3, item: <FullRed className={cvaCategoryPaydateImg()} />, title: 'payDate_3' },
-  ],
-};
 
 const DropdownItem: FC<DropdownItemProps> = ({
                                                selected,
@@ -83,7 +56,7 @@ const DropdownItem: FC<DropdownItemProps> = ({
             <div className={cvaCategoryManagerContainer()}>
               {all === 'yes' ? (
                 <>
-                  {images.manager.map(el => (
+                  {ItemCategories.manager.map(el => (
                     <Image
                       key={el.id}
                       src={el.src}
@@ -109,7 +82,7 @@ const DropdownItem: FC<DropdownItemProps> = ({
             <div className={cvaCategoryProjectContainer()}>
               {all === 'yes' ? (
                 <>
-                  {images.project.map(el => (
+                  {ItemCategories.project.map(el => (
                     <div>
                       {el.item}
                     </div>
@@ -132,7 +105,7 @@ const DropdownItem: FC<DropdownItemProps> = ({
             <div className={cvaCategoryPaydate()}>
               {all === 'yes' ? (
                 <>
-                  {images.payDate.map(el => (
+                  {ItemCategories.payDate.map(el => (
                     <div key={el.id}>
                       {el.item}
                     </div>

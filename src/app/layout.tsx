@@ -26,7 +26,7 @@ const SuisseIntl = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Profitability Dashboard',
+  title: 'Auth',
 };
 
 export default function RootLayout({

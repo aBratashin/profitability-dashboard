@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { managerProps, SortDropDownProps } from '@/features/SortDropdown/SortDropDown.props';
+import { SortDropDownProps } from '@/features/SortDropdown/SortDropDown.props';
 import Image from 'next/image';
 import HalfRed from '/public/img/half-red.svg';
 import FullRed from '/public/img/full-red.svg';
@@ -8,14 +8,13 @@ import {
   cvaButtonContainer,
   cvaLightgreen,
   cvaManager,
-  cvaManagerOne,
-  cvaManagerTwo,
   cvaPayDate,
   cvaPayDateImg,
   cvaProject,
   cvaPurple,
 } from '@/features/SortDropdown/SortDropDownStyles';
 import ArrowDownGray from '@/shared/ui/Arrow/ArrowDownGray/ArrowDownGray';
+import { SortCategories } from '@/entities/SortCategories/SortCategories';
 
 const getSortDropDownType = (category: SortDropDownProps['category']) => {
   if (category === 'manager') {
@@ -27,13 +26,7 @@ const getSortDropDownType = (category: SortDropDownProps['category']) => {
   }
 };
 
-const managerImages: managerProps[] = [
-  { id: 1, src: '/img/manager_1.jpg', title: 'manager_1', class: cvaManagerOne() },
-  { id: 2, src: '/img/manager_2.jpg', title: 'manager_2', class: cvaManagerTwo() },
-];
-
 const SortDropDown: FC<SortDropDownProps> = ({ category, itemType }) => {
-
   const textType = getSortDropDownType(category);
 
   return (
@@ -48,7 +41,7 @@ const SortDropDown: FC<SortDropDownProps> = ({ category, itemType }) => {
 
       {category === 'manager' && itemType === 'default' &&
         <div className={cvaManager()}>
-          {managerImages.map(el => (
+          {SortCategories.map(el => (
             <Image
               key={el.id}
               src={el.src}

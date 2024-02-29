@@ -9,20 +9,9 @@ import {
   cvaSecondLineWrapper,
 } from '@/widgets/Line/LineStyles';
 import ArrowRightBlue from '@/shared/ui/Arrow/ArrowRightBlue/ArrowRightBlue';
+import { LineCategories } from '@/entities/LineCategories/LineCategories';
 
 const Line = () => {
-  const lineArray = (new Array(30).fill(
-      <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="none">
-        <path d="M0.898438 0V12" stroke="#070707" strokeOpacity="0.24" />
-      </svg>)
-  );
-
-  const monthsData = [
-    { id: 1, name: 'Сентябрь', lines: lineArray },
-    { id: 2, name: 'Октябрь', lines: lineArray },
-    { id: 3, name: 'Ноябрь', lines: lineArray },
-  ];
-
   const renderMonth = (month) => (
     <React.Fragment key={month.id}>
       <svg xmlns="http://www.w3.org/2000/svg" width="2" height="22" viewBox="0 0 2 22" fill="none">
@@ -51,7 +40,7 @@ const Line = () => {
           <path d="M0.898438 0V12" stroke="#070707" strokeOpacity="0.24" />
         </svg>
 
-        {monthsData.map((month) => renderMonth(month))}
+        {LineCategories.map((month) => renderMonth(month))}
 
         <div className={cvaSecondLineTitle()}>
           <div className={cvaSecondLineText()}>Сегодня</div>

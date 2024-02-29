@@ -3,13 +3,7 @@ import Search from '@/features/Search/Search';
 import SortDropDown from '@/features/SortDropdown/SortDropDown';
 import ClearButton from '@/features/Button/ClearButton/ClearButton';
 import { cvaContainer, cvaHeaderTitle, cvaHeaderWrapper } from '@/widgets/Header/HeaderStyles';
-import { DropDownItem } from '@/features/SortDropdown/SortDropDown.props';
-
-const DropDownData: DropDownItem[] = [
-  { id: 1, category: 'manager', itemType: 'all' },
-  { id: 2, category: 'project', itemType: 'all' },
-  { id: 3, category: 'pay_date', itemType: 'all' },
-];
+import { HeaderCategories } from '@/entities/HeaderCategories/HeaderCategories';
 
 const Header = () => {
   return (
@@ -19,7 +13,7 @@ const Header = () => {
       </div>
       <div className={cvaHeaderWrapper()}>
         <Search placeholder="Найти проект" />
-        {DropDownData.map(({ id, ...restProps }) => (
+        {HeaderCategories.map(({ id, ...restProps }) => (
           <SortDropDown key={id} {...restProps} />
         ))}
         <ClearButton />
