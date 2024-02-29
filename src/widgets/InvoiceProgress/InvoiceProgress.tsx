@@ -5,22 +5,7 @@ import { InvoiceProgressProps } from '@/widgets/InvoiceProgress/InvoiceProgress.
 import Image from 'next/image';
 import classNames from 'classnames';
 import { cvaContainer, cvaImage, cvaSubtext, cvaText, cvaTransitText } from './InvoiceProgressStyles';
-
-const getImg = (type: InvoiceProgressProps['type']): string => {
-  if (type === 'Закрыт' || type === 'Транзитный') {
-    return './img/check-green.svg';
-  }
-  if (type === 'Отправлен') {
-    return './img/full-blue.svg';
-  }
-  if (type === 'Подготовлен') {
-    return './img/half-yellow.svg';
-  }
-  if (type === 'Выставить') {
-    return './img/half-red.svg';
-  }
-  return './img/full-gray.svg';
-};
+import { getImg } from '@/widgets/InvoiceProgress/helpers/InvoiceHelpers';
 
 const InvoiceProgress: FC<InvoiceProgressProps> = ({ sum, type }) => {
   const imgSrc = getImg(type);

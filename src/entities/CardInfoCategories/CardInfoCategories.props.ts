@@ -4,7 +4,7 @@ import { StageProgressProps } from '@/widgets/StageProgress/StageProgress.props'
 import { StageItemProps } from '@/widgets/StageItem/StageItem.props';
 
 export interface CardInfoCategoriesProps {
-  id: number
+  id: number;
   title: string;
   month: CardInfoUpProps['month'];
   year: CardInfoUpProps['year'];

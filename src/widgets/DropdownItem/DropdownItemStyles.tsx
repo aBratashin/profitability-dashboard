@@ -14,7 +14,7 @@ export const cvaWrapper = cva(
 
 export const cvaSelectedImage = cva(
   [
-    'w-auto h-auto',
+    'w-[20px] h-[20px]',
   ],
 );
 
@@ -27,30 +27,6 @@ export const cvaText = cva(
 export const cvaSubtext = cva(
   [
     'opacity-35',
-  ],
-);
-
-export const cvaCategoryManagerContainer = cva(
-  [
-    'flex items-center',
-  ],
-);
-
-export const cvaCategoryManagers = cva(
-  [
-    'rounded-full border-2 border-white',
-  ],
-);
-
-export const cvaCategoryManagerTwo = cva(
-  [
-    'rounded-full border-2 border-white m-[-8px]',
-  ],
-);
-
-export const cvaCategoryProjectContainer = cva(
-  [
-    'flex gap-1',
   ],
 );
 
@@ -81,48 +57,6 @@ export const cvaCategoryProjectBlue = cva(
 export const cvaCategoryProjectRed = cva(
   [
     'w-3 h-3 bg-red rounded-[3px]',
-  ],
-);
-
-export const cvaCategoryProjectGeneral = cva(
-  [
-    'w-3 h-3 rounded-[3px]',
-  ],
-);
-
-export const cvaCategoryProjectGeneralPurple = cva(
-  [
-    'bg-purple',
-  ],
-);
-
-export const cvaCategoryProjectGeneralLightgreen = cva(
-  [
-    'bg-lightgreen',
-  ],
-);
-
-export const cvaCategoryProjectGeneralPink = cva(
-  [
-    'bg-pink',
-  ],
-);
-
-export const cvaCategoryProjectGeneralBlue = cva(
-  [
-    'bg-blue',
-  ],
-);
-
-export const cvaCategoryProjectGeneralRed = cva(
-  [
-    'bg-red',
-  ],
-);
-
-export const cvaCategoryPaydate = cva(
-  [
-    'flex gap-2',
   ],
 );
 

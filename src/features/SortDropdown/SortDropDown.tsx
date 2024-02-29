@@ -15,16 +15,7 @@ import {
 } from '@/features/SortDropdown/SortDropDownStyles';
 import ArrowDownGray from '@/shared/ui/Arrow/ArrowDownGray/ArrowDownGray';
 import { SortCategories } from '@/entities/SortCategories/SortCategories';
-
-const getSortDropDownType = (category: SortDropDownProps['category']) => {
-  if (category === 'manager') {
-    return 'Менеджеры';
-  } else if (category === 'project') {
-    return 'Тип проекта';
-  } else if (category === 'pay_date') {
-    return 'Дата оплаты';
-  }
-};
+import { getSortDropDownType } from '@/features/SortDropdown/helpers/SortHelpers';
 
 const SortDropDown: FC<SortDropDownProps> = ({ category, itemType }) => {
   const textType = getSortDropDownType(category);

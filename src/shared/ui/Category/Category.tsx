@@ -2,21 +2,7 @@ import React, { FC } from 'react';
 import { CategoryProps } from '@/shared/ui/Category/Category.props';
 import classNames from 'classnames';
 import { cvaContainer, cvaDev, cvaHours, cvaSeo, cvaSup, cvaTm } from './CategoryStyles';
-
-
-const getCategoryType = (type: CategoryProps['type']) => {
-  if (type === 'dev') {
-    return 'Разработка сайта';
-  } else if (type === 'sup') {
-    return 'Разовые работы';
-  } else if (type === 'T&M') {
-    return 'T&M';
-  } else if (type === 'hours') {
-    return 'Пакет часов';
-  } else if (type === 'seo') {
-    return 'SEO';
-  }
-};
+import { getCategoryType } from '@/shared/ui/Category/helpers/CategoryHelpers';
 
 const Category: FC<CategoryProps> = ({ type }) => {
 

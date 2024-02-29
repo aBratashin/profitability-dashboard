@@ -6,9 +6,9 @@ import {
   cvaCategoryProjectPurple,
   cvaCategoryProjectRed,
 } from '@/widgets/DropdownItem/DropdownItemStyles';
-import HalfYellow from '*.svg';
-import HalfRed from '*.svg';
-import FullRed from '*.svg';
+import HalfYellow from '/public/img/half-yellow.svg';
+import HalfRed from '/public/img/half-red.svg';
+import FullRed from '/public/img/full-red.svg';
 import React from 'react';
 import { ItemCategoriesProps } from './ItemCategories.props';
 

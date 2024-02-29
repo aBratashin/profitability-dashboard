@@ -1,25 +1,11 @@
 import React, { FC } from 'react';
 import { DropdownItemProps } from '@/widgets/DropdownItem/DropdownItem.props';
 import Image from 'next/image';
-import classNames from 'classnames';
-import {
-  cvaCategoryManagerContainer,
-  cvaCategoryManagers,
-  cvaCategoryPaydate,
-  cvaCategoryProjectContainer,
-  cvaCategoryProjectGeneral,
-  cvaCategoryProjectGeneralBlue,
-  cvaCategoryProjectGeneralLightgreen,
-  cvaCategoryProjectGeneralPink,
-  cvaCategoryProjectGeneralPurple,
-  cvaCategoryProjectGeneralRed,
-  cvaContainer,
-  cvaSelectedImage,
-  cvaSubtext,
-  cvaText,
-  cvaWrapper,
-} from './DropdownItemStyles';
+import { cvaContainer, cvaSelectedImage, cvaSubtext, cvaText, cvaWrapper } from './DropdownItemStyles';
 import { ItemCategories } from '@/entities/ItemCategories/ItemCategories';
+import ManagerCategory from '@/widgets/DropdownItem/components/ManagerCategory/ManagerCategory';
+import ProjectCategory from '@/widgets/DropdownItem/components/ProjectCategory/ProjectCategory';
+import PayDateCategory from '@/widgets/DropdownItem/components/PayDateCategory/PayDateCategory';
 
 
 const DropdownItem: FC<DropdownItemProps> = ({
@@ -54,75 +40,13 @@ const DropdownItem: FC<DropdownItemProps> = ({
         </div>
         <div>
           {category === 'manager' && (
-            <div className={cvaCategoryManagerContainer()}>
-              {all === 'yes' ? (
-                <>
-                  {ItemCategories.manager.map(el => (
-                    <Image
-                      key={el.id}
-                      src={el.src}
-                      width={24}
-                      height={24}
-                      alt={el.title}
-                      loading={'eager'}
-                      className={cvaCategoryManagers()}
-                    />
-                  ))}
-                </>
-              ) : (
-                <Image
-                  src={src || '/img/manager_1.jpg'}
-                  width={24}
-                  height={24}
-                  alt="manager_1"
-                  className={cvaCategoryManagers()}
-                />
-              )}
-            </div>
+            <ManagerCategory all={all} src={src} managerList={ItemCategories.manager} />
           )}
           {category === 'project' && (
-            <div className={cvaCategoryProjectContainer()}>
-              {all === 'yes' ? (
-                <>
-                  {ItemCategories.project.map(el => (
-                    <div>
-                      {el.item}
-                    </div>
-                  ))}
-                </>
-              ) : (
-                <div
-                  className={classNames([cvaCategoryProjectGeneral()], {
-                    [cvaCategoryProjectGeneralPurple()]: color === 'purple',
-                    [cvaCategoryProjectGeneralLightgreen()]: color === 'lightgreen',
-                    [cvaCategoryProjectGeneralPink()]: color === 'pink',
-                    [cvaCategoryProjectGeneralBlue()]: color === 'blue',
-                    [cvaCategoryProjectGeneralRed()]: color === 'red',
-                  })}
-                ></div>
-              )}
-            </div>
+            <ProjectCategory all={all} color={color} projectList={ItemCategories.project} />
           )}
           {category === 'pay_date' && (
-            <div className={cvaCategoryPaydate()}>
-              {all === 'yes' ? (
-                <>
-                  {ItemCategories.payDate.map(el => (
-                    <div key={el.id}>
-                      {el.item}
-                    </div>
-                  ))}
-                </>
-              ) : (
-                <Image
-                  src={src || `/img/full-red.svg`}
-                  width={18}
-                  height={18}
-                  alt="full-red"
-                  loading={'eager'}
-                />
-              )}
-            </div>
+            <PayDateCategory all={all} src={src} payDateList={ItemCategories.payDate} />
           )}
         </div>
       </div>
