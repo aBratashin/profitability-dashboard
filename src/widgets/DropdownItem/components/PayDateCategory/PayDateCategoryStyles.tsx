@@ -1,7 +1,7 @@
-import { cva } from 'class-variance-authority';
+import {cva} from 'class-variance-authority';
 
 export const cvaCategoryPaydate = cva(
-  [
-    'flex gap-2',
-  ],
+    [
+        'flex gap-2',
+    ],
 );

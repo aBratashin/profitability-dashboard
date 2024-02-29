@@ -1,55 +1,55 @@
-import { cva } from 'class-variance-authority';
+import {cva} from 'class-variance-authority';
 
 export const cvaContainer = cva(
-  [
-    'min-w-[300px] flex items-center justify-between gap-4',
-  ],
+    [
+        'min-w-[300px] flex items-center justify-between gap-4',
+    ],
 );
 
 export const cvaWrapper = cva(
-  [
-    'flex items-center gap-4',
-  ],
+    [
+        'flex items-center gap-4',
+    ],
 );
 
 export const cvaCategoryProjectContainer = cva(
-  [
-    'flex gap-1',
-  ],
+    [
+        'flex gap-1',
+    ],
 );
 
 export const cvaCategoryProjectGeneral = cva(
-  [
-    'w-3 h-3 rounded-[3px]',
-  ],
+    [
+        'w-3 h-3 rounded-[3px]',
+    ],
 );
 
 export const cvaCategoryProjectGeneralPurple = cva(
-  [
-    'bg-purple',
-  ],
+    [
+        'bg-purple',
+    ],
 );
 
 export const cvaCategoryProjectGeneralLightgreen = cva(
-  [
-    'bg-lightgreen',
-  ],
+    [
+        'bg-lightgreen',
+    ],
 );
 
 export const cvaCategoryProjectGeneralPink = cva(
-  [
-    'bg-pink',
-  ],
+    [
+        'bg-pink',
+    ],
 );
 
 export const cvaCategoryProjectGeneralBlue = cva(
-  [
-    'bg-blue',
-  ],
+    [
+        'bg-blue',
+    ],
 );
 
 export const cvaCategoryProjectGeneralRed = cva(
-  [
-    'bg-red',
-  ],
+    [
+        'bg-red',
+    ],
 );
