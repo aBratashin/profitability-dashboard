@@ -6,20 +6,22 @@ import Image from 'next/image';
 import classNames from 'classnames';
 import { cvaContainer, cvaImage, cvaSubtext, cvaText, cvaTransitText } from './InvoiceProgressStyles';
 import { getImg } from '@/widgets/InvoiceProgress/helpers/InvoiceHelpers';
+import InvoiceProgressCircle from '@/shared/ui/InvoiceProgressCircle/InvoiceProgressCircle';
 
 const InvoiceProgress: FC<InvoiceProgressProps> = ({ sum, type }) => {
   const imgSrc = getImg(type);
 
   return (
     <div className={cvaContainer()}>
-      <Image
+      {imgSrc && <Image
         src={imgSrc}
         width={16}
         height={16}
         alt="stage-progress"
         loading={'eager'}
         className={cvaImage()}
-      />
+      />}
+      {(type !== 'Закрыт' && type !== 'Транзитный') && <InvoiceProgressCircle type={type} />}
       <span
         className={classNames([cvaText()], {
           [cvaSubtext()]:

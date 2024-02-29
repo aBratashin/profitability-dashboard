@@ -21,6 +21,7 @@ export const CardInfoCategories: CardInfoCategoriesProps[] = [
     profitColor: 'green',
     hours: 10,
     percentage: 100,
+    circleType: 'Отправлен',
   },
   {
     id: 2,
@@ -42,6 +43,7 @@ export const CardInfoCategories: CardInfoCategoriesProps[] = [
     profitColor: 'green',
     hours: 58,
     percentage: 100,
+    circleType: 'Закрыт',
   },
   {
     id: 3,
@@ -63,5 +65,6 @@ export const CardInfoCategories: CardInfoCategoriesProps[] = [
     profitColor: 'yellow',
     hours: 108,
     percentage: 80,
+    circleType: 'Планируется',
   },
 ];

@@ -24,6 +24,7 @@ const CardInfoContainer: FC<CardInfoContainerProps> = ({
                                                          profitColor,
                                                          hours,
                                                          percentage,
+                                                         circleType,
                                                        }) => {
   return (
     <div className={cvaWrapper()}>
@@ -35,7 +36,7 @@ const CardInfoContainer: FC<CardInfoContainerProps> = ({
       </div>
       <CardItemGraph>
         <StageItem timeColor={timeColor} profitColor={profitColor} hours={hours} percentage={percentage}>
-          <InvoiceProgress sum={sum} type="Планируется" />
+          <InvoiceProgress sum={sum} type={circleType} />
         </StageItem>
       </CardItemGraph>
     </div>
