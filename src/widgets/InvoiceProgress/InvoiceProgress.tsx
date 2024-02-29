@@ -32,6 +32,7 @@ const InvoiceProgress: FC<InvoiceProgressProps> = ({ sum, type }) => {
         width={16}
         height={16}
         alt="stage-progress"
+        loading={'eager'}
         className={cvaImage()}
       />
       <span

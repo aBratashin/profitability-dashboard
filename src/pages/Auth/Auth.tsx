@@ -22,6 +22,7 @@ const Auth = () => {
             width={64}
             height={64}
             alt="User"
+            loading={'eager'}
             className={cvaPersonImage()}
           />
           <p className={cvaPersonTitle()}>Егор Коротаев</p>

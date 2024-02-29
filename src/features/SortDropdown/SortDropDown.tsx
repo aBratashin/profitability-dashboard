@@ -48,6 +48,7 @@ const SortDropDown: FC<SortDropDownProps> = ({ category, itemType }) => {
               width={24}
               height={24}
               alt={el.title}
+              loading={'eager'}
               className={el.class}
             />
           ))}

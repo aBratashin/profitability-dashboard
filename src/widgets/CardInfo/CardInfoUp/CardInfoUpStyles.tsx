@@ -44,6 +44,6 @@ export const cvaDate = cva(
 
 export const cvaImage = cva(
   [
-    'rounded-full',
+    'rounded-full w-[70px] h-[70px]',
   ],
 );

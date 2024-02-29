@@ -57,8 +57,9 @@ const CardInfoUp: FC<CardInfoUpProps> = ({ title, month, year, type, src }) => {
           <Image
             src={src || ''}
             width={70}
-            height={60}
+            height={70}
             alt="arrow-right-black"
+            loading={'eager'}
             className={cvaImage()}
           />
         </div>

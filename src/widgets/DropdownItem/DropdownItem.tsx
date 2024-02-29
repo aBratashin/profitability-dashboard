@@ -40,6 +40,7 @@ const DropdownItem: FC<DropdownItemProps> = ({
               width={20}
               height={20}
               alt="check-green"
+              loading={'eager'}
               className={cvaSelectedImage()}
             />
           )}
@@ -63,6 +64,7 @@ const DropdownItem: FC<DropdownItemProps> = ({
                       width={24}
                       height={24}
                       alt={el.title}
+                      loading={'eager'}
                       className={cvaCategoryManagers()}
                     />
                   ))}
@@ -117,6 +119,7 @@ const DropdownItem: FC<DropdownItemProps> = ({
                   width={18}
                   height={18}
                   alt="full-red"
+                  loading={'eager'}
                 />
               )}
             </div>
