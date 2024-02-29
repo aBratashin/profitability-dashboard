@@ -1,4 +1,6 @@
-import React, { FC } from 'react';
+'use client'
+
+import React, { FC, useState, useCallback } from 'react';
 import { SortDropDownProps } from '@/features/SortDropdown/SortDropDown.props';
 import Image from 'next/image';
 import HalfRed from '/public/img/half-red.svg';
@@ -16,19 +18,24 @@ import {
 import ArrowDownGray from '@/shared/ui/Arrow/ArrowDownGray/ArrowDownGray';
 import { SortCategories } from '@/entities/SortCategories/SortCategories';
 import { getSortDropDownType } from '@/features/SortDropdown/helpers/SortHelpers';
+import DropdownContent from '@/widgets/DropdownContent/DropdownContent';
 
-const SortDropDown: FC<SortDropDownProps> = ({ category, itemType }) => {
+const SortDropDown: FC<SortDropDownProps> = ({ category, itemType, index, isOpen, toggleOpen }) => {
   const textType = getSortDropDownType(category);
+  const [localIsOpen, setLocalIsOpen] = useState(false);
+
+  const handleClick = () => {
+    toggleOpen(index);
+    setLocalIsOpen(!localIsOpen);
+  };
 
   return (
     <button
+      onClick={handleClick}
       className={cvaButtonContainer()}
-      style={{ borderColor: '#e4e4e4' }}
+      style={{ borderColor: '#e4e4e4', position: 'relative' }}
     >
-      {itemType === 'all' && <div
-        className={cvaAll()}>
-        <span>Все</span>
-      </div>}
+      {itemType === 'all' && <div className={cvaAll()}><span>Все</span></div>}
 
       {category === 'manager' && itemType === 'default' &&
         <div className={cvaManager()}>
@@ -58,6 +65,11 @@ const SortDropDown: FC<SortDropDownProps> = ({ category, itemType }) => {
         </div>}
       {textType}
       <ArrowDownGray />
+      {isOpen && (
+        <div style={{ position: 'absolute', top: 80, left: -60 }}>
+          <DropdownContent type={'manager'} />
+        </div>
+      )}
     </button>
   );
 };
