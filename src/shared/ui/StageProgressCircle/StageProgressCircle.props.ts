@@ -1,6 +1,6 @@
-import { DetailedHTMLProps, HTMLAttributes } from 'react';
+import {DetailedHTMLProps, HTMLAttributes} from 'react';
 
 export interface StageProgressCircleProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  progress: number;
-  isExpired: boolean;
+    progress: number;
+    isExpired: boolean;
 }
