@@ -1,5 +1,7 @@
+import { SortDropDownProps } from '@/features/SortDropdown/SortDropDown.props';
+
 export interface HeaderCategoriesProps {
   id: number;
-  category: 'manager' | 'project' | 'pay_date';
-  itemType: 'all';
+  category: SortDropDownProps['category'];
+  itemType: SortDropDownProps['itemType'];
 }

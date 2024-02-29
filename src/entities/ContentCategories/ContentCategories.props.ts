@@ -1,23 +1,25 @@
-type CommonCategoryProps = {
+import { DropdownItemProps } from '@/widgets/DropdownItem/DropdownItem.props';
+
+interface CommonCategoryProps {
   id: number;
-  selected: 'yes' | 'no';
-  all: 'yes' | 'no';
+  selected: DropdownItemProps['selected'];
+  all: DropdownItemProps['all'];
   label?: string;
-};
+}
 
 interface ManagerCategory extends CommonCategoryProps {
   category: 'manager';
-  src?: string;
+  src?: DropdownItemProps['src'];
 }
 
 interface ProjectCategory extends CommonCategoryProps {
   category: 'project';
-  color?: 'purple' | 'lightgreen' | 'pink' | 'blue' | 'red';
+  color?: DropdownItemProps['color'];
 }
 
 interface PayDateCategory extends CommonCategoryProps {
   category: 'pay_date';
-  circle_progress?: 'half-yellow' | 'half-red' | 'full-red';
+  circle_progress?: DropdownItemProps['circle_progress'];
 }
 
 export interface ContentCategoriesProps {
