@@ -1,16 +1,16 @@
 import React, { FC } from 'react';
 import { StageProgressProps } from './StageProgress.props';
 import { cvaContainer } from '@/widgets/StageProgress/StageProgressStyles';
-import CircleProgress from '@/shared/ui/CircleProgress/CircleProgress';
+import StageProgressCircle from '@/shared/ui/StageProgressCircle/StageProgressCircle';
 import { getDaysEnding, getTextColor } from '@/widgets/StageProgress/helpers/StageHelpers';
 
 const StageProgress: FC<StageProgressProps> = ({ progress, isExpired }) => {
   const daysEnding = getDaysEnding(progress);
-  const textColor = getTextColor(progress);
+  const textColor = getTextColor(progress, isExpired);
 
   return (
     <div className={cvaContainer()}>
-      <CircleProgress progress={progress} />
+      <StageProgressCircle progress={progress} isExpired={isExpired} />
       <span
         style={{ color: textColor }}
       >

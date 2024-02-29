@@ -11,8 +11,10 @@ export const getDaysEnding = (number: number): string => {
   }
 };
 
-export const getTextColor = (progress: number): string => {
-  if (progress >= 20) {
+export const getTextColor = (progress: number, isExpired: boolean): string => {
+  if (isExpired) {
+    return '#FF5757';
+  } else if (progress >= 20) {
     return '#01BF64';
   } else if (progress > 7) {
     return '#F8AE00';

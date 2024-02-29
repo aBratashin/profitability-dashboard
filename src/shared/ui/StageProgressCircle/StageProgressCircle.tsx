@@ -1,19 +1,20 @@
 import React, { FC } from 'react';
+import { StageProgressCircleProps } from '@/shared/ui/StageProgressCircle/StageProgressCircle.props';
 
-interface CircleProgressProps {
-  progress: number;
-}
-
-const CircleProgress: FC<CircleProgressProps> = ({ progress }) => {
+const StageProgressCircle: FC<StageProgressCircleProps> = ({ progress, isExpired }) => {
   const circumference = 1.8 * Math.PI * 9;
   const grayCircumference = circumference;
   let strokeColor = '#FF5757';
   let strokeDashoffset = (1 + progress / 32) * circumference;
 
-  if (progress >= 20) {
-    strokeColor = '#01BF64';
-  } else if (progress > 7) {
-    strokeColor = '#F8AE00';
+  if (isExpired) {
+    strokeDashoffset = 0;
+  } else {
+    if (progress >= 20) {
+      strokeColor = '#01BF64';
+    } else if (progress > 7) {
+      strokeColor = '#F8AE00';
+    }
   }
 
   return (
@@ -42,4 +43,4 @@ const CircleProgress: FC<CircleProgressProps> = ({ progress }) => {
   );
 };
 
-export default CircleProgress;
+export default StageProgressCircle;
